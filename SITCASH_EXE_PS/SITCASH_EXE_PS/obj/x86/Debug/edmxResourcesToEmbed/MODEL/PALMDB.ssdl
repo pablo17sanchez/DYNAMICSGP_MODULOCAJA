@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PalmComSyncModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="PalmComSyncModelStoreContainer">
+    <EntitySet Name="in_conduce" EntityType="PalmComSyncModel.Store.in_conduce" store:Type="Tables" store:Schema="dbo" store:Name="in_conduce">
+      <DefiningQuery>SELECT 
+      [in_conduce].[PALMID] AS [PALMID], 
+      [in_conduce].[CNDNUM] AS [CNDNUM], 
+      [in_conduce].[FECHACOND] AS [FECHACOND], 
+      [in_conduce].[CODCLIE] AS [CODCLIE], 
+      [in_conduce].[MONTOCND] AS [MONTOCND], 
+      [in_conduce].[MONPAGO] AS [MONPAGO], 
+      [in_conduce].[DESCUENTO] AS [DESCUENTO], 
+      [in_conduce].[IMPUESTO] AS [IMPUESTO], 
+      [in_conduce].[VALIDO] AS [VALIDO], 
+      [in_conduce].[HORA] AS [HORA], 
+      [in_conduce].[LATITUD] AS [LATITUD], 
+      [in_conduce].[LONGITUD] AS [LONGITUD], 
+      [in_conduce].[RECIBIDOEN] AS [RECIBIDOEN], 
+      [in_conduce].[IPADDRESS] AS [IPADDRESS], 
+      [in_conduce].[PUID] AS [PUID], 
+      [in_conduce].[ruta] AS [ruta], 
+      [in_conduce].[idvendedor] AS [idvendedor], 
+      [in_conduce].[idayudante] AS [idayudante], 
+      [in_conduce].[idayudante2] AS [idayudante2], 
+      [in_conduce].[NoDocumento] AS [NoDocumento], 
+      [in_conduce].[TipoDocumento] AS [TipoDocumento]
+      FROM [dbo].[in_conduce] AS [in_conduce]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="in_detacond" EntityType="PalmComSyncModel.Store.in_detacond" store:Type="Tables" store:Schema="dbo" store:Name="in_detacond">
+      <DefiningQuery>SELECT 
+      [in_detacond].[PALMID] AS [PALMID], 
+      [in_detacond].[CNDNUM] AS [CNDNUM], 
+      [in_detacond].[CODPROD] AS [CODPROD], 
+      [in_detacond].[CANTIDAD] AS [CANTIDAD], 
+      [in_detacond].[PRECIO] AS [PRECIO], 
+      [in_detacond].[IMPUESTO] AS [IMPUESTO], 
+      [in_detacond].[IMPORTE] AS [IMPORTE], 
+      [in_detacond].[DESCOFE] AS [DESCOFE], 
+      [in_detacond].[RECIBIDOEN] AS [RECIBIDOEN], 
+      [in_detacond].[IPADDRESS] AS [IPADDRESS], 
+      [in_detacond].[PUID] AS [PUID], 
+      [in_detacond].[orden] AS [orden], 
+      [in_detacond].[fechacond] AS [fechacond]
+      FROM [dbo].[in_detacond] AS [in_detacond]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IN_DETAFAC" EntityType="PalmComSyncModel.Store.IN_DETAFAC" store:Type="Tables" store:Schema="dbo" store:Name="IN_DETAFAC">
+      <DefiningQuery>SELECT 
+      [IN_DETAFAC].[CANTIDAD] AS [CANTIDAD], 
+      [IN_DETAFAC].[CODPROD] AS [CODPROD], 
+      [IN_DETAFAC].[FACNUM] AS [FACNUM], 
+      [IN_DETAFAC].[IMPORTE] AS [IMPORTE], 
+      [IN_DETAFAC].[IMPUESTO] AS [IMPUESTO], 
+      [IN_DETAFAC].[PALMID] AS [PALMID], 
+      [IN_DETAFAC].[PRECIO] AS [PRECIO], 
+      [IN_DETAFAC].[descofe] AS [descofe], 
+      [IN_DETAFAC].[ipaddress] AS [ipaddress], 
+      [IN_DETAFAC].[puid] AS [puid]
+      FROM [dbo].[IN_DETAFAC] AS [IN_DETAFAC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IN_DETAPED" EntityType="PalmComSyncModel.Store.IN_DETAPED" store:Type="Tables" store:Schema="dbo" store:Name="IN_DETAPED">
+      <DefiningQuery>SELECT 
+      [IN_DETAPED].[PALMID] AS [PALMID], 
+      [IN_DETAPED].[PEDNUM] AS [PEDNUM], 
+      [IN_DETAPED].[CODPROD] AS [CODPROD], 
+      [IN_DETAPED].[CANTIDAD] AS [CANTIDAD], 
+      [IN_DETAPED].[PRECIO] AS [PRECIO], 
+      [IN_DETAPED].[IMPUESTO] AS [IMPUESTO], 
+      [IN_DETAPED].[IMPORTE] AS [IMPORTE], 
+      [IN_DETAPED].[ESCALA] AS [ESCALA], 
+      [IN_DETAPED].[RECIBIDOEN] AS [RECIBIDOEN], 
+      [IN_DETAPED].[IPADDRESS] AS [IPADDRESS], 
+      [IN_DETAPED].[PUID] AS [PUID], 
+      [IN_DETAPED].[orden] AS [orden]
+      FROM [dbo].[IN_DETAPED] AS [IN_DETAPED]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IN_FACTURA" EntityType="PalmComSyncModel.Store.IN_FACTURA" store:Type="Tables" store:Schema="dbo" store:Name="IN_FACTURA">
+      <DefiningQuery>SELECT 
+      [IN_FACTURA].[BALACT] AS [BALACT], 
+      [IN_FACTURA].[BALANT] AS [BALANT], 
+      [IN_FACTURA].[BANCOCC] AS [BANCOCC], 
+      [IN_FACTURA].[BANCOCHK] AS [BANCOCHK], 
+      [IN_FACTURA].[CODCLIE] AS [CODCLIE], 
+      [IN_FACTURA].[DESCUENTO] AS [DESCUENTO], 
+      [IN_FACTURA].[FACNUM] AS [FACNUM], 
+      [IN_FACTURA].[FECHAEXP] AS [FECHAEXP], 
+      [IN_FACTURA].[FECHAFAC] AS [FECHAFAC], 
+      [IN_FACTURA].[IMPUESTO] AS [IMPUESTO], 
+      [IN_FACTURA].[MONCC] AS [MONCC], 
+      [IN_FACTURA].[MONPAGEFEC] AS [MONPAGEFEC], 
+      [IN_FACTURA].[MONPAGO] AS [MONPAGO], 
+      [IN_FACTURA].[MONTOCHK] AS [MONTOCHK], 
+      [IN_FACTURA].[MONTOFAC] AS [MONTOFAC], 
+      [IN_FACTURA].[NUMCC] AS [NUMCC], 
+      [IN_FACTURA].[NUMCHK] AS [NUMCHK], 
+      [IN_FACTURA].[OBSERVPAGO] AS [OBSERVPAGO], 
+      [IN_FACTURA].[PALMID] AS [PALMID], 
+      [IN_FACTURA].[TIPOCC] AS [TIPOCC], 
+      [IN_FACTURA].[VALIDO] AS [VALIDO], 
+      [IN_FACTURA].[HORA] AS [HORA], 
+      [IN_FACTURA].[NCF] AS [NCF], 
+      [IN_FACTURA].[FECHADEP] AS [FECHADEP], 
+      [IN_FACTURA].[ipaddress] AS [ipaddress], 
+      [IN_FACTURA].[puid] AS [puid], 
+      [IN_FACTURA].[recibidoen] AS [recibidoen], 
+      [IN_FACTURA].[latitud] AS [latitud], 
+      [IN_FACTURA].[longitud] AS [longitud], 
+      [IN_FACTURA].[ruta] AS [ruta], 
+      [IN_FACTURA].[idvendedor] AS [idvendedor], 
+      [IN_FACTURA].[idayudante] AS [idayudante], 
+      [IN_FACTURA].[idayudante2] AS [idayudante2], 
+      [IN_FACTURA].[NoDocumento] AS [NoDocumento], 
+      [IN_FACTURA].[TipoDocumento] AS [TipoDocumento]
+      FROM [dbo].[IN_FACTURA] AS [IN_FACTURA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IN_PEDIDOS" EntityType="PalmComSyncModel.Store.IN_PEDIDOS" store:Type="Tables" store:Schema="dbo" store:Name="IN_PEDIDOS">
+      <DefiningQuery>SELECT 
+      [IN_PEDIDOS].[PALMID] AS [PALMID], 
+      [IN_PEDIDOS].[PEDNUM] AS [PEDNUM], 
+      [IN_PEDIDOS].[FECHAPED] AS [FECHAPED], 
+      [IN_PEDIDOS].[CODCLIE] AS [CODCLIE], 
+      [IN_PEDIDOS].[MONTOPED] AS [MONTOPED], 
+      [IN_PEDIDOS].[MONPAGO] AS [MONPAGO], 
+      [IN_PEDIDOS].[IMPUESTO] AS [IMPUESTO], 
+      [IN_PEDIDOS].[VALIDO] AS [VALIDO], 
+      [IN_PEDIDOS].[HORA] AS [HORA], 
+      [IN_PEDIDOS].[LATITUD] AS [LATITUD], 
+      [IN_PEDIDOS].[LONGITUD] AS [LONGITUD], 
+      [IN_PEDIDOS].[RECIBIDOEN] AS [RECIBIDOEN], 
+      [IN_PEDIDOS].[IPADDRESS] AS [IPADDRESS], 
+      [IN_PEDIDOS].[PUID] AS [PUID], 
+      [IN_PEDIDOS].[PROCESADO] AS [PROCESADO], 
+      [IN_PEDIDOS].[ruta] AS [ruta], 
+      [IN_PEDIDOS].[idvendedor] AS [idvendedor], 
+      [IN_PEDIDOS].[idayudante] AS [idayudante], 
+      [IN_PEDIDOS].[idayudante2] AS [idayudante2], 
+      [IN_PEDIDOS].[NoDocumento] AS [NoDocumento], 
+      [IN_PEDIDOS].[TipoDocumento] AS [TipoDocumento]
+      FROM [dbo].[IN_PEDIDOS] AS [IN_PEDIDOS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="OUT_CONFIG" EntityType="PalmComSyncModel.Store.OUT_CONFIG" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PalmComSync.dbo.in_conduce' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="in_conduce">
+    <Key>
+      <PropertyRef Name="CNDNUM" />
+    </Key>
+    <Property Name="PALMID" Type="varchar" MaxLength="10" />
+    <Property Name="CNDNUM" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="FECHACOND" Type="datetime" />
+    <Property Name="CODCLIE" Type="varchar" MaxLength="10" />
+    <Property Name="MONTOCND" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="MONPAGO" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="DESCUENTO" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="IMPUESTO" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="VALIDO" Type="bit" />
+    <Property Name="HORA" Type="varchar" MaxLength="8" />
+    <Property Name="LATITUD" Type="float" />
+    <Property Name="LONGITUD" Type="float" />
+    <Property Name="RECIBIDOEN" Type="datetime" />
+    <Property Name="IPADDRESS" Type="varchar" MaxLength="20" />
+    <Property Name="PUID" Type="varchar" MaxLength="20" />
+    <Property Name="ruta" Type="char" MaxLength="15" />
+    <Property Name="idvendedor" Type="char" MaxLength="15" />
+    <Property Name="idayudante" Type="char" MaxLength="15" />
+    <Property Name="idayudante2" Type="char" MaxLength="15" />
+    <Property Name="NoDocumento" Type="char" MaxLength="15" />
+    <Property Name="TipoDocumento" Type="char" MaxLength="15" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PalmComSync.dbo.in_detacond' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="in_detacond">
+    <Key>
+      <PropertyRef Name="orden" />
+    </Key>
+    <Property Name="PALMID" Type="varchar" MaxLength="10" />
+    <Property Name="CNDNUM" Type="varchar" MaxLength="50" />
+    <Property Name="CODPROD" Type="varchar" MaxLength="16" />
+    <Property Name="CANTIDAD" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="PRECIO" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="IMPUESTO" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="IMPORTE" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="DESCOFE" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="RECIBIDOEN" Type="datetime" />
+    <Property Name="IPADDRESS" Type="varchar" MaxLength="20" />
+    <Property Name="PUID" Type="varchar" MaxLength="20" />
+    <Property Name="orden" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fechacond" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PalmComSync.dbo.IN_DETAFAC' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="IN_DETAFAC">
+    <Key>
+      <PropertyRef Name="CODPROD" />
+      <PropertyRef Name="FACNUM" />
+      <PropertyRef Name="PRECIO" />
+    </Key>
+    <Property Name="CANTIDAD" Type="decimal" Precision="24" Scale="2" />
+    <Property Name="CODPROD" Type="char" Nullable="false" MaxLength="16" />
+    <Property Name="FACNUM" Type="char" Nullable="false" MaxLength="50" />
+    <Property Name="IMPORTE" Type="real" />
+    <Property Name="IMPUESTO" Type="real" />
+    <Property Name="PALMID" Type="char" MaxLength="10" />
+    <Property Name="PRECIO" Type="decimal" Nullable="false" Precision="22" Scale="2" />
+    <Property Name="descofe" Type="real" />
+    <Property Name="ipaddress" Type="char" MaxLength="15" />
+    <Property Name="puid" Type="char" MaxLength="25" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PalmComSync.dbo.IN_DETAPED' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="IN_DETAPED">
+    <Key>
+      <PropertyRef Name="orden" />
+    </Key>
+    <Property Name="PALMID" Type="varchar" MaxLength="10" />
+    <Property Name="PEDNUM" Type="varchar" MaxLength="50" />
+    <Property Name="CODPROD" Type="varchar" MaxLength="16" />
+    <Property Name="CANTIDAD" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="PRECIO" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="IMPUESTO" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="IMPORTE" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="ESCALA" Type="int" />
+    <Property Name="RECIBIDOEN" Type="datetime" />
+    <Property Name="IPADDRESS" Type="varchar" MaxLength="20" />
+    <Property Name="PUID" Type="varchar" MaxLength="20" />
+    <Property Name="orden" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PalmComSync.dbo.IN_FACTURA' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="IN_FACTURA">
+    <Key>
+      <PropertyRef Name="FACNUM" />
+      <PropertyRef Name="PALMID" />
+      <PropertyRef Name="NCF" />
+    </Key>
+    <Property Name="BALACT" Type="decimal" Precision="22" Scale="2" />
+    <Property Name="BALANT" Type="decimal" Precision="22" Scale="2" />
+    <Property Name="BANCOCC" Type="char" MaxLength="15" />
+    <Property Name="BANCOCHK" Type="char" MaxLength="20" />
+    <Property Name="CODCLIE" Type="char" MaxLength="10" />
+    <Property Name="DESCUENTO" Type="decimal" Precision="22" Scale="2" />
+    <Property Name="FACNUM" Type="char" Nullable="false" MaxLength="50" />
+    <Property Name="FECHAEXP" Type="char" MaxLength="7" />
+    <Property Name="FECHAFAC" Type="datetime" />
+    <Property Name="IMPUESTO" Type="decimal" Precision="22" Scale="2" />
+    <Property Name="MONCC" Type="decimal" Precision="22" Scale="2" />
+    <Property Name="MONPAGEFEC" Type="decimal" Precision="22" Scale="2" />
+    <Property Name="MONPAGO" Type="decimal" Precision="22" Scale="2" />
+    <Property Name="MONTOCHK" Type="decimal" Precision="22" Scale="2" />
+    <Property Name="MONTOFAC" Type="decimal" Precision="22" Scale="2" />
+    <Property Name="NUMCC" Type="char" MaxLength="20" />
+    <Property Name="NUMCHK" Type="char" MaxLength="15" />
+    <Property Name="OBSERVPAGO" Type="char" MaxLength="100" />
+    <Property Name="PALMID" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="TIPOCC" Type="char" MaxLength="15" />
+    <Property Name="VALIDO" Type="char" MaxLength="10" />
+    <Property Name="HORA" Type="char" MaxLength="50" />
+    <Property Name="NCF" Type="char" Nullable="false" MaxLength="20" />
+    <Property Name="FECHADEP" Type="datetime" />
+    <Property Name="ipaddress" Type="char" MaxLength="15" />
+    <Property Name="puid" Type="char" MaxLength="25" />
+    <Property Name="recibidoen" Type="datetime" />
+    <Property Name="latitud" Type="real" />
+    <Property Name="longitud" Type="real" />
+    <Property Name="ruta" Type="char" MaxLength="15" />
+    <Property Name="idvendedor" Type="char" MaxLength="15" />
+    <Property Name="idayudante" Type="char" MaxLength="15" />
+    <Property Name="idayudante2" Type="char" MaxLength="15" />
+    <Property Name="NoDocumento" Type="char" MaxLength="25" />
+    <Property Name="TipoDocumento" Type="char" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PalmComSync.dbo.IN_PEDIDOS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="IN_PEDIDOS">
+    <Key>
+      <PropertyRef Name="PEDNUM" />
+    </Key>
+    <Property Name="PALMID" Type="varchar" MaxLength="10" />
+    <Property Name="PEDNUM" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="FECHAPED" Type="datetime" />
+    <Property Name="CODCLIE" Type="varchar" MaxLength="10" />
+    <Property Name="MONTOPED" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="MONPAGO" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="IMPUESTO" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="VALIDO" Type="bit" />
+    <Property Name="HORA" Type="varchar" MaxLength="8" />
+    <Property Name="LATITUD" Type="float" />
+    <Property Name="LONGITUD" Type="float" />
+    <Property Name="RECIBIDOEN" Type="datetime" />
+    <Property Name="IPADDRESS" Type="varchar" MaxLength="20" />
+    <Property Name="PUID" Type="varchar" MaxLength="20" />
+    <Property Name="PROCESADO" Type="varchar" MaxLength="2" />
+    <Property Name="ruta" Type="char" MaxLength="15" />
+    <Property Name="idvendedor" Type="char" MaxLength="15" />
+    <Property Name="idayudante" Type="char" MaxLength="15" />
+    <Property Name="idayudante2" Type="char" MaxLength="15" />
+    <Property Name="NoDocumento" Type="char" MaxLength="15" />
+    <Property Name="TipoDocumento" Type="char" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="OUT_CONFIG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="DIRECCION" Type="char" MaxLength="50" />
+    <Property Name="EMPRESA" Type="char" MaxLength="40" />
+    <Property Name="IDVENDEDOR" Type="char" MaxLength="10" />
+    <Property Name="MENSAJE" Type="char" MaxLength="50" />
+    <Property Name="MOTPASS" Type="char" MaxLength="15" />
+    <Property Name="NOMBREVEND" Type="char" MaxLength="50" />
+    <Property Name="ONDUTY" Type="char" MaxLength="10" />
+    <Property Name="PALMID" Type="char" MaxLength="10" />
+    <Property Name="PITBIS" Type="int" />
+    <Property Name="TELEFONO" Type="char" MaxLength="20" />
+    <Property Name="RNC" Type="char" MaxLength="15" />
+    <Property Name="IMPINC" Type="char" MaxLength="10" />
+    <Property Name="INIFAC" Type="char" MaxLength="3" />
+    <Property Name="RUTA" Type="nvarchar" MaxLength="10" />
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idayudante2" Type="char" MaxLength="15" />
+    <Property Name="nombreayudante2" Type="char" MaxLength="50" />
+    <Property Name="HOST" Type="char" MaxLength="15" />
+    <Property Name="idayudante" Type="char" MaxLength="15" />
+    <Property Name="nombreayudante" Type="char" MaxLength="50" />
+    <Property Name="IDRUTA" Type="varchar" MaxLength="10" />
+  </EntityType>
+</Schema>

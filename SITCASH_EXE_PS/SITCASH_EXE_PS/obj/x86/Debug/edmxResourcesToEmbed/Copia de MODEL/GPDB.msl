@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GPHNModelStoreContainer" CdmEntityContainer="GPHNEntitiesDB">
+    <EntitySetMapping Name="RM00301">
+      <EntityTypeMapping TypeName="GPHNModel.RM00301">
+        <MappingFragment StoreEntitySet="RM00301">
+          <ScalarProperty Name="SLPRSNID" ColumnName="SLPRSNID" />
+          <ScalarProperty Name="EMPLOYID" ColumnName="EMPLOYID" />
+          <ScalarProperty Name="VENDORID" ColumnName="VENDORID" />
+          <ScalarProperty Name="SLPRSNFN" ColumnName="SLPRSNFN" />
+          <ScalarProperty Name="SPRSNSMN" ColumnName="SPRSNSMN" />
+          <ScalarProperty Name="SPRSNSLN" ColumnName="SPRSNSLN" />
+          <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+          <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+          <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="PHONE1" ColumnName="PHONE1" />
+          <ScalarProperty Name="PHONE2" ColumnName="PHONE2" />
+          <ScalarProperty Name="PHONE3" ColumnName="PHONE3" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="INACTIVE" ColumnName="INACTIVE" />
+          <ScalarProperty Name="SALSTERR" ColumnName="SALSTERR" />
+          <ScalarProperty Name="COMMCODE" ColumnName="COMMCODE" />
+          <ScalarProperty Name="COMPRCNT" ColumnName="COMPRCNT" />
+          <ScalarProperty Name="STDCPRCT" ColumnName="STDCPRCT" />
+          <ScalarProperty Name="COMAPPTO" ColumnName="COMAPPTO" />
+          <ScalarProperty Name="COSTTODT" ColumnName="COSTTODT" />
+          <ScalarProperty Name="CSTLSTYR" ColumnName="CSTLSTYR" />
+          <ScalarProperty Name="TTLCOMTD" ColumnName="TTLCOMTD" />
+          <ScalarProperty Name="TTLCOMLY" ColumnName="TTLCOMLY" />
+          <ScalarProperty Name="COMSLTDT" ColumnName="COMSLTDT" />
+          <ScalarProperty Name="COMSLLYR" ColumnName="COMSLLYR" />
+          <ScalarProperty Name="NCOMSLTD" ColumnName="NCOMSLTD" />
+          <ScalarProperty Name="NCOMSLYR" ColumnName="NCOMSLYR" />
+          <ScalarProperty Name="KPCALHST" ColumnName="KPCALHST" />
+          <ScalarProperty Name="KPERHIST" ColumnName="KPERHIST" />
+          <ScalarProperty Name="NOTEINDX" ColumnName="NOTEINDX" />
+          <ScalarProperty Name="MODIFDT" ColumnName="MODIFDT" />
+          <ScalarProperty Name="CREATDDT" ColumnName="CREATDDT" />
+          <ScalarProperty Name="COMMDEST" ColumnName="COMMDEST" />
+          <ScalarProperty Name="DEX_ROW_TS" ColumnName="DEX_ROW_TS" />
+          <ScalarProperty Name="DEX_ROW_ID" ColumnName="DEX_ROW_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IV00101">
+      <EntityTypeMapping TypeName="GPHNModel.IV00101">
+        <MappingFragment StoreEntitySet="IV00101">
+          <ScalarProperty Name="DEX_ROW_ID" ColumnName="DEX_ROW_ID" />
+          <ScalarProperty Name="DEX_ROW_TS" ColumnName="DEX_ROW_TS" />
+          <ScalarProperty Name="Lot_Split_Quantity" ColumnName="Lot_Split_Quantity" />
+          <ScalarProperty Name="LASTGENLOT" ColumnName="LASTGENLOT" />
+          <ScalarProperty Name="LOTEXPWARNDAYS" ColumnName="LOTEXPWARNDAYS" />
+          <ScalarProperty Name="LOTEXPWARN" ColumnName="LOTEXPWARN" />
+          <ScalarProperty Name="INCLUDEINDP" ColumnName="INCLUDEINDP" />
+          <ScalarProperty Name="MINSHELF2" ColumnName="MINSHELF2" />
+          <ScalarProperty Name="MINSHELF1" ColumnName="MINSHELF1" />
+          <ScalarProperty Name="INACTIVE" ColumnName="INACTIVE" />
+          <ScalarProperty Name="CNTRYORGN" ColumnName="CNTRYORGN" />
+          <ScalarProperty Name="STTSTCLVLPRCNTG" ColumnName="STTSTCLVLPRCNTG" />
+          <ScalarProperty Name="ITMPLNNNGTYP" ColumnName="ITMPLNNNGTYP" />
+          <ScalarProperty Name="Purchase_Tax_Options" ColumnName="Purchase_Tax_Options" />
+          <ScalarProperty Name="Purchase_Item_Tax_Schedu" ColumnName="Purchase_Item_Tax_Schedu" />
+          <ScalarProperty Name="Tolerance_Percentage" ColumnName="Tolerance_Percentage" />
+          <ScalarProperty Name="Revalue_Inventory" ColumnName="Revalue_Inventory" />
+          <ScalarProperty Name="ABCCODE" ColumnName="ABCCODE" />
+          <ScalarProperty Name="LASTGENSN" ColumnName="LASTGENSN" />
+          <ScalarProperty Name="KTACCTSR" ColumnName="KTACCTSR" />
+          <ScalarProperty Name="SELNGUOM" ColumnName="SELNGUOM" />
+          <ScalarProperty Name="PRCHSUOM" ColumnName="PRCHSUOM" />
+          <ScalarProperty Name="PRICMTHD" ColumnName="PRICMTHD" />
+          <ScalarProperty Name="PriceGroup" ColumnName="PriceGroup" />
+          <ScalarProperty Name="TCC" ColumnName="TCC" />
+          <ScalarProperty Name="ITEMCODE" ColumnName="ITEMCODE" />
+          <ScalarProperty Name="CGSMCIDX" ColumnName="CGSMCIDX" />
+          <ScalarProperty Name="CGSINFLX" ColumnName="CGSINFLX" />
+          <ScalarProperty Name="INVMCIDX" ColumnName="INVMCIDX" />
+          <ScalarProperty Name="IVINFIDX" ColumnName="IVINFIDX" />
+          <ScalarProperty Name="PURMCIDX" ColumnName="PURMCIDX" />
+          <ScalarProperty Name="PINFLIDX" ColumnName="PINFLIDX" />
+          <ScalarProperty Name="LOCNCODE" ColumnName="LOCNCODE" />
+          <ScalarProperty Name="PRCLEVEL" ColumnName="PRCLEVEL" />
+          <ScalarProperty Name="WRNTYDYS" ColumnName="WRNTYDYS" />
+          <ScalarProperty Name="CREATDDT" ColumnName="CREATDDT" />
+          <ScalarProperty Name="MODIFDT" ColumnName="MODIFDT" />
+          <ScalarProperty Name="MSTRCDTY" ColumnName="MSTRCDTY" />
+          <ScalarProperty Name="USCATVLS_6" ColumnName="USCATVLS_6" />
+          <ScalarProperty Name="USCATVLS_5" ColumnName="USCATVLS_5" />
+          <ScalarProperty Name="USCATVLS_4" ColumnName="USCATVLS_4" />
+          <ScalarProperty Name="USCATVLS_3" ColumnName="USCATVLS_3" />
+          <ScalarProperty Name="USCATVLS_2" ColumnName="USCATVLS_2" />
+          <ScalarProperty Name="USCATVLS_1" ColumnName="USCATVLS_1" />
+          <ScalarProperty Name="ALTITEM2" ColumnName="ALTITEM2" />
+          <ScalarProperty Name="ALTITEM1" ColumnName="ALTITEM1" />
+          <ScalarProperty Name="UOMSCHDL" ColumnName="UOMSCHDL" />
+          <ScalarProperty Name="VCTNMTHD" ColumnName="VCTNMTHD" />
+          <ScalarProperty Name="ALWBKORD" ColumnName="ALWBKORD" />
+          <ScalarProperty Name="KPDSTHST" ColumnName="KPDSTHST" />
+          <ScalarProperty Name="KPCALHST" ColumnName="KPCALHST" />
+          <ScalarProperty Name="KPTRXHST" ColumnName="KPTRXHST" />
+          <ScalarProperty Name="KPERHIST" ColumnName="KPERHIST" />
+          <ScalarProperty Name="LOTTYPE" ColumnName="LOTTYPE" />
+          <ScalarProperty Name="ITMTRKOP" ColumnName="ITMTRKOP" />
+          <ScalarProperty Name="ITMCLSCD" ColumnName="ITMCLSCD" />
+          <ScalarProperty Name="ASMVRIDX" ColumnName="ASMVRIDX" />
+          <ScalarProperty Name="IVRETIDX" ColumnName="IVRETIDX" />
+          <ScalarProperty Name="UPPVIDX" ColumnName="UPPVIDX" />
+          <ScalarProperty Name="PURPVIDX" ColumnName="PURPVIDX" />
+          <ScalarProperty Name="DPSHPIDX" ColumnName="DPSHPIDX" />
+          <ScalarProperty Name="IVVARIDX" ColumnName="IVVARIDX" />
+          <ScalarProperty Name="IVDMGIDX" ColumnName="IVDMGIDX" />
+          <ScalarProperty Name="IVINSVIX" ColumnName="IVINSVIX" />
+          <ScalarProperty Name="IVINUSIX" ColumnName="IVINUSIX" />
+          <ScalarProperty Name="IVSLRNIX" ColumnName="IVSLRNIX" />
+          <ScalarProperty Name="IVSLDSIX" ColumnName="IVSLDSIX" />
+          <ScalarProperty Name="IVSLSIDX" ColumnName="IVSLSIDX" />
+          <ScalarProperty Name="IVCOGSIX" ColumnName="IVCOGSIX" />
+          <ScalarProperty Name="IVIVOFIX" ColumnName="IVIVOFIX" />
+          <ScalarProperty Name="IVIVINDX" ColumnName="IVIVINDX" />
+          <ScalarProperty Name="TAXOPTNS" ColumnName="TAXOPTNS" />
+          <ScalarProperty Name="ITMTSHID" ColumnName="ITMTSHID" />
+          <ScalarProperty Name="DECPLCUR" ColumnName="DECPLCUR" />
+          <ScalarProperty Name="DECPLQTY" ColumnName="DECPLQTY" />
+          <ScalarProperty Name="ITEMSHWT" ColumnName="ITEMSHWT" />
+          <ScalarProperty Name="CURRCOST" ColumnName="CURRCOST" />
+          <ScalarProperty Name="STNDCOST" ColumnName="STNDCOST" />
+          <ScalarProperty Name="ITMGEDSC" ColumnName="ITMGEDSC" />
+          <ScalarProperty Name="ITEMTYPE" ColumnName="ITEMTYPE" />
+          <ScalarProperty Name="ITMSHNAM" ColumnName="ITMSHNAM" />
+          <ScalarProperty Name="NOTEINDX" ColumnName="NOTEINDX" />
+          <ScalarProperty Name="ITEMDESC" ColumnName="ITEMDESC" />
+          <ScalarProperty Name="ITEMNMBR" ColumnName="ITEMNMBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

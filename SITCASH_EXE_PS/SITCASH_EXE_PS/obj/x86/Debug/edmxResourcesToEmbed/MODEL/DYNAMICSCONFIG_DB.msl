@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DYNAMICSModelStoreContainer" CdmEntityContainer="DYNAMICSEntities">
+    <EntitySetMapping Name="SY01400">
+      <EntityTypeMapping TypeName="DYNAMICSModel.SY01400">
+        <MappingFragment StoreEntitySet="SY01400">
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="Zoom_Fields_Font_Color" ColumnName="Zoom_Fields_Font_Color" />
+          <ScalarProperty Name="Zoom_Fields_Font_Style" ColumnName="Zoom_Fields_Font_Style" />
+          <ScalarProperty Name="Editable_Fields_Backgrou" ColumnName="Editable_Fields_Backgrou" />
+          <ScalarProperty Name="Editable_Fields_Font_Col" ColumnName="Editable_Fields_Font_Col" />
+          <ScalarProperty Name="Editable_Fields_Pattern" ColumnName="Editable_Fields_Pattern" />
+          <ScalarProperty Name="Editable_Fields_Pattern_" ColumnName="Editable_Fields_Pattern_" />
+          <ScalarProperty Name="Scrolling_Fields_Backgro" ColumnName="Scrolling_Fields_Backgro" />
+          <ScalarProperty Name="Scrolling_Fields_Font_Co" ColumnName="Scrolling_Fields_Font_Co" />
+          <ScalarProperty Name="Scrolling_Fields_Pattern" ColumnName="Scrolling_Fields_Pattern" />
+          <ScalarProperty Name="Scrolling_Fields_PatCor" ColumnName="Scrolling_Fields_PatCor" />
+          <ScalarProperty Name="Required_Fields_Font_Col" ColumnName="Required_Fields_Font_Col" />
+          <ScalarProperty Name="Required_Fields_Font_Sty" ColumnName="Required_Fields_Font_Sty" />
+          <ScalarProperty Name="Internet_Browser" ColumnName="Internet_Browser" />
+          <ScalarProperty Name="Internet_Address" ColumnName="Internet_Address" />
+          <ScalarProperty Name="Internet_Type" ColumnName="Internet_Type" />
+          <ScalarProperty Name="Internet_Address_Name" ColumnName="Internet_Address_Name" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="USRCLASS" ColumnName="USRCLASS" />
+          <ScalarProperty Name="MDFRDENT" ColumnName="MDFRDENT" />
+          <ScalarProperty Name="MODIFDT" ColumnName="MODIFDT" />
+          <ScalarProperty Name="CREATDDT" ColumnName="CREATDDT" />
+          <ScalarProperty Name="LSTUSRED" ColumnName="LSTUSRED" />
+          <ScalarProperty Name="PRTOSCRN" ColumnName="PRTOSCRN" />
+          <ScalarProperty Name="PRTOPRTR" ColumnName="PRTOPRTR" />
+          <ScalarProperty Name="SHRQFLDS" ColumnName="SHRQFLDS" />
+          <ScalarProperty Name="DISTPROC" ColumnName="DISTPROC" />
+          <ScalarProperty Name="HSCRLARW" ColumnName="HSCRLARW" />
+          <ScalarProperty Name="SOPTYPE" ColumnName="SOPTYPE" />
+          <ScalarProperty Name="RELID" ColumnName="RELID" />
+          <ScalarProperty Name="SECACCS" ColumnName="SECACCS" />
+          <ScalarProperty Name="TODOOPEN" ColumnName="TODOOPEN" />
+          <ScalarProperty Name="TODOPERSOPEN" ColumnName="TODOPERSOPEN" />
+          <ScalarProperty Name="TODOPERSROLL" ColumnName="TODOPERSROLL" />
+          <ScalarProperty Name="PALETTETYPE" ColumnName="PALETTETYPE" />
+          <ScalarProperty Name="ORGANIZATIONALVIEW" ColumnName="ORGANIZATIONALVIEW" />
+          <ScalarProperty Name="ACCOUNTINGVIEW" ColumnName="ACCOUNTINGVIEW" />
+          <ScalarProperty Name="USERLANG" ColumnName="USERLANG" />
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+          <ScalarProperty Name="DEX_ROW_ID" ColumnName="DEX_ROW_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SY01500">
+      <EntityTypeMapping TypeName="DYNAMICSModel.SY01500">
+        <MappingFragment StoreEntitySet="SY01500">
+          <ScalarProperty Name="DEX_ROW_ID" ColumnName="DEX_ROW_ID" />
+          <ScalarProperty Name="CrmServiceUrl" ColumnName="CrmServiceUrl" />
+          <ScalarProperty Name="CrmOrganizationName" ColumnName="CrmOrganizationName" />
+          <ScalarProperty Name="CrmCredentialsMethod" ColumnName="CrmCredentialsMethod" />
+          <ScalarProperty Name="WORKFLOWENABLED" ColumnName="WORKFLOWENABLED" />
+          <ScalarProperty Name="IVTRFDOCFMT" ColumnName="IVTRFDOCFMT" />
+          <ScalarProperty Name="CCode" ColumnName="CCode" />
+          <ScalarProperty Name="PurchasesTaxDetailID" ColumnName="PurchasesTaxDetailID" />
+          <ScalarProperty Name="DFLTTXDTLID" ColumnName="DFLTTXDTLID" />
+          <ScalarProperty Name="BRNCHNMBR" ColumnName="BRNCHNMBR" />
+          <ScalarProperty Name="GOVCRPID" ColumnName="GOVCRPID" />
+          <ScalarProperty Name="SICNUMBER" ColumnName="SICNUMBER" />
+          <ScalarProperty Name="DUNS_Number" ColumnName="DUNS_Number" />
+          <ScalarProperty Name="TYPEOFBUSINESS" ColumnName="TYPEOFBUSINESS" />
+          <ScalarProperty Name="Vets100CompanyNumber" ColumnName="Vets100CompanyNumber" />
+          <ScalarProperty Name="Company_Options" ColumnName="Company_Options" />
+          <ScalarProperty Name="DisplayRegisteredPalette" ColumnName="DisplayRegisteredPalette" />
+          <ScalarProperty Name="SECOPTS" ColumnName="SECOPTS" />
+          <ScalarProperty Name="ACSEGSEP" ColumnName="ACSEGSEP" />
+          <ScalarProperty Name="INTERID" ColumnName="INTERID" />
+          <ScalarProperty Name="LOCATNID" ColumnName="LOCATNID" />
+          <ScalarProperty Name="VATMODE" ColumnName="VATMODE" />
+          <ScalarProperty Name="PPSVNDID" ColumnName="PPSVNDID" />
+          <ScalarProperty Name="PPSTAXRT" ColumnName="PPSTAXRT" />
+          <ScalarProperty Name="PPSFRNUM" ColumnName="PPSFRNUM" />
+          <ScalarProperty Name="NOTEINDX" ColumnName="NOTEINDX" />
+          <ScalarProperty Name="CMPCNTRY" ColumnName="CMPCNTRY" />
+          <ScalarProperty Name="UDCOSTR2" ColumnName="UDCOSTR2" />
+          <ScalarProperty Name="UDCOSTR1" ColumnName="UDCOSTR1" />
+          <ScalarProperty Name="USESCRTY" ColumnName="USESCRTY" />
+          <ScalarProperty Name="FAXNUMBR" ColumnName="FAXNUMBR" />
+          <ScalarProperty Name="PHONE3" ColumnName="PHONE3" />
+          <ScalarProperty Name="PHONE2" ColumnName="PHONE2" />
+          <ScalarProperty Name="PHONE1" ColumnName="PHONE1" />
+          <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="COUNTY" ColumnName="COUNTY" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+          <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+          <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+          <ScalarProperty Name="ADRCNTCT" ColumnName="ADRCNTCT" />
+          <ScalarProperty Name="LOCATNNM" ColumnName="LOCATNNM" />
+          <ScalarProperty Name="COSTXSCH" ColumnName="COSTXSCH" />
+          <ScalarProperty Name="COPTXSCH" ColumnName="COPTXSCH" />
+          <ScalarProperty Name="TAXREGTN" ColumnName="TAXREGTN" />
+          <ScalarProperty Name="TAXEXMT2" ColumnName="TAXEXMT2" />
+          <ScalarProperty Name="TAXEXMT1" ColumnName="TAXEXMT1" />
+          <ScalarProperty Name="CMPNYNAM" ColumnName="CMPNYNAM" />
+          <ScalarProperty Name="CMPANYID" ColumnName="CMPANYID" />
+          <ScalarProperty Name="MODIFDT" ColumnName="MODIFDT" />
+          <ScalarProperty Name="CREATDDT" ColumnName="CREATDDT" />
+          <ScalarProperty Name="LSTUSRED" ColumnName="LSTUSRED" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

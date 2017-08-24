@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GPHNModelStoreContainer" CdmEntityContainer="GPHNEntities">
+    <EntitySetMapping Name="RM00301">
+      <EntityTypeMapping TypeName="GPHNModel.RM00301">
+        <MappingFragment StoreEntitySet="RM00301">
+          <ScalarProperty Name="SLPRSNID" ColumnName="SLPRSNID" />
+          <ScalarProperty Name="EMPLOYID" ColumnName="EMPLOYID" />
+          <ScalarProperty Name="VENDORID" ColumnName="VENDORID" />
+          <ScalarProperty Name="SLPRSNFN" ColumnName="SLPRSNFN" />
+          <ScalarProperty Name="SPRSNSMN" ColumnName="SPRSNSMN" />
+          <ScalarProperty Name="SPRSNSLN" ColumnName="SPRSNSLN" />
+          <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+          <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+          <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="PHONE1" ColumnName="PHONE1" />
+          <ScalarProperty Name="PHONE2" ColumnName="PHONE2" />
+          <ScalarProperty Name="PHONE3" ColumnName="PHONE3" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="INACTIVE" ColumnName="INACTIVE" />
+          <ScalarProperty Name="SALSTERR" ColumnName="SALSTERR" />
+          <ScalarProperty Name="COMMCODE" ColumnName="COMMCODE" />
+          <ScalarProperty Name="COMPRCNT" ColumnName="COMPRCNT" />
+          <ScalarProperty Name="STDCPRCT" ColumnName="STDCPRCT" />
+          <ScalarProperty Name="COMAPPTO" ColumnName="COMAPPTO" />
+          <ScalarProperty Name="COSTTODT" ColumnName="COSTTODT" />
+          <ScalarProperty Name="CSTLSTYR" ColumnName="CSTLSTYR" />
+          <ScalarProperty Name="TTLCOMTD" ColumnName="TTLCOMTD" />
+          <ScalarProperty Name="TTLCOMLY" ColumnName="TTLCOMLY" />
+          <ScalarProperty Name="COMSLTDT" ColumnName="COMSLTDT" />
+          <ScalarProperty Name="COMSLLYR" ColumnName="COMSLLYR" />
+          <ScalarProperty Name="NCOMSLTD" ColumnName="NCOMSLTD" />
+          <ScalarProperty Name="NCOMSLYR" ColumnName="NCOMSLYR" />
+          <ScalarProperty Name="KPCALHST" ColumnName="KPCALHST" />
+          <ScalarProperty Name="KPERHIST" ColumnName="KPERHIST" />
+          <ScalarProperty Name="NOTEINDX" ColumnName="NOTEINDX" />
+          <ScalarProperty Name="MODIFDT" ColumnName="MODIFDT" />
+          <ScalarProperty Name="CREATDDT" ColumnName="CREATDDT" />
+          <ScalarProperty Name="COMMDEST" ColumnName="COMMDEST" />
+          <ScalarProperty Name="DEX_ROW_TS" ColumnName="DEX_ROW_TS" />
+          <ScalarProperty Name="DEX_ROW_ID" ColumnName="DEX_ROW_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DYNAMICSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DYNAMICSModelStoreContainer">
+    <EntitySet Name="SY01400" EntityType="DYNAMICSModel.Store.SY01400" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SY01500" EntityType="DYNAMICSModel.Store.SY01500" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="SY01400">
+    <Key>
+      <PropertyRef Name="USERID" />
+    </Key>
+    <Property Name="USERID" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="USERNAME" Type="char" Nullable="false" MaxLength="31" />
+    <Property Name="Zoom_Fields_Font_Color" Type="smallint" Nullable="false" />
+    <Property Name="Zoom_Fields_Font_Style" Type="smallint" Nullable="false" />
+    <Property Name="Editable_Fields_Backgrou" Type="smallint" Nullable="false" />
+    <Property Name="Editable_Fields_Font_Col" Type="smallint" Nullable="false" />
+    <Property Name="Editable_Fields_Pattern" Type="smallint" Nullable="false" />
+    <Property Name="Editable_Fields_Pattern_" Type="smallint" Nullable="false" />
+    <Property Name="Scrolling_Fields_Backgro" Type="smallint" Nullable="false" />
+    <Property Name="Scrolling_Fields_Font_Co" Type="smallint" Nullable="false" />
+    <Property Name="Scrolling_Fields_Pattern" Type="smallint" Nullable="false" />
+    <Property Name="Scrolling_Fields_PatCor" Type="smallint" Nullable="false" />
+    <Property Name="Required_Fields_Font_Col" Type="smallint" Nullable="false" />
+    <Property Name="Required_Fields_Font_Sty" Type="smallint" Nullable="false" />
+    <Property Name="Internet_Browser" Type="char" Nullable="false" MaxLength="255" />
+    <Property Name="Internet_Address" Type="char" Nullable="false" MaxLength="255" />
+    <Property Name="Internet_Type" Type="smallint" Nullable="false" />
+    <Property Name="Internet_Address_Name" Type="char" Nullable="false" MaxLength="81" />
+    <Property Name="PASSWORD" Type="binary" Nullable="false" MaxLength="16" />
+    <Property Name="USRCLASS" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="MDFRDENT" Type="smallint" Nullable="false" />
+    <Property Name="MODIFDT" Type="datetime" Nullable="false" />
+    <Property Name="CREATDDT" Type="datetime" Nullable="false" />
+    <Property Name="LSTUSRED" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="PRTOSCRN" Type="tinyint" Nullable="false" />
+    <Property Name="PRTOPRTR" Type="tinyint" Nullable="false" />
+    <Property Name="SHRQFLDS" Type="tinyint" Nullable="false" />
+    <Property Name="DISTPROC" Type="smallint" Nullable="false" />
+    <Property Name="HSCRLARW" Type="tinyint" Nullable="false" />
+    <Property Name="SOPTYPE" Type="smallint" Nullable="false" />
+    <Property Name="RELID" Type="int" Nullable="false" />
+    <Property Name="SECACCS" Type="binary" Nullable="false" MaxLength="4" />
+    <Property Name="TODOOPEN" Type="tinyint" Nullable="false" />
+    <Property Name="TODOPERSOPEN" Type="tinyint" Nullable="false" />
+    <Property Name="TODOPERSROLL" Type="tinyint" Nullable="false" />
+    <Property Name="PALETTETYPE" Type="smallint" Nullable="false" />
+    <Property Name="ORGANIZATIONALVIEW" Type="smallint" Nullable="false" />
+    <Property Name="ACCOUNTINGVIEW" Type="tinyint" Nullable="false" />
+    <Property Name="USERLANG" Type="smallint" Nullable="false" />
+    <Property Name="UserRole" Type="smallint" Nullable="false" />
+    <Property Name="DEX_ROW_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="SY01500">
+    <Key>
+      <PropertyRef Name="CMPANYID" />
+    </Key>
+    <Property Name="LSTUSRED" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="CREATDDT" Type="datetime" Nullable="false" />
+    <Property Name="MODIFDT" Type="datetime" Nullable="false" />
+    <Property Name="CMPANYID" Type="smallint" Nullable="false" />
+    <Property Name="CMPNYNAM" Type="char" Nullable="false" MaxLength="65" />
+    <Property Name="TAXEXMT1" Type="char" Nullable="false" MaxLength="25" />
+    <Property Name="TAXEXMT2" Type="char" Nullable="false" MaxLength="25" />
+    <Property Name="TAXREGTN" Type="char" Nullable="false" MaxLength="25" />
+    <Property Name="COPTXSCH" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="COSTXSCH" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="LOCATNNM" Type="char" Nullable="false" MaxLength="31" />
+    <Property Name="ADRCNTCT" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="ADDRESS1" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="ADDRESS2" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="ADDRESS3" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="CITY" Type="char" Nullable="false" MaxLength="35" />
+    <Property Name="COUNTY" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="STATE" Type="char" Nullable="false" MaxLength="29" />
+    <Property Name="ZIPCODE" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="PHONE1" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="PHONE2" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="PHONE3" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="FAXNUMBR" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="USESCRTY" Type="tinyint" Nullable="false" />
+    <Property Name="UDCOSTR1" Type="char" Nullable="false" MaxLength="31" />
+    <Property Name="UDCOSTR2" Type="char" Nullable="false" MaxLength="31" />
+    <Property Name="CMPCNTRY" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="NOTEINDX" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="PPSFRNUM" Type="char" Nullable="false" MaxLength="25" />
+    <Property Name="PPSTAXRT" Type="smallint" Nullable="false" />
+    <Property Name="PPSVNDID" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="VATMODE" Type="tinyint" Nullable="false" />
+    <Property Name="LOCATNID" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="INTERID" Type="char" Nullable="false" MaxLength="5" />
+    <Property Name="ACSEGSEP" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="SECOPTS" Type="binary" Nullable="false" MaxLength="4" />
+    <Property Name="DisplayRegisteredPalette" Type="tinyint" Nullable="false" />
+    <Property Name="Company_Options" Type="binary" Nullable="false" MaxLength="4" />
+    <Property Name="Vets100CompanyNumber" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="TYPEOFBUSINESS" Type="char" Nullable="false" MaxLength="31" />
+    <Property Name="DUNS_Number" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="SICNUMBER" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="GOVCRPID" Type="char" Nullable="false" MaxLength="31" />
+    <Property Name="BRNCHNMBR" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="DFLTTXDTLID" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="PurchasesTaxDetailID" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="CCode" Type="char" Nullable="false" MaxLength="7" />
+    <Property Name="IVTRFDOCFMT" Type="smallint" Nullable="false" />
+    <Property Name="WORKFLOWENABLED" Type="tinyint" Nullable="false" />
+    <Property Name="CrmCredentialsMethod" Type="smallint" Nullable="false" />
+    <Property Name="CrmOrganizationName" Type="char" Nullable="false" MaxLength="255" />
+    <Property Name="CrmServiceUrl" Type="char" Nullable="false" MaxLength="255" />
+    <Property Name="DEX_ROW_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>

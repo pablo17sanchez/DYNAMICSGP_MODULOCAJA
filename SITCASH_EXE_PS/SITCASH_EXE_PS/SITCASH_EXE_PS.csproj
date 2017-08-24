@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A97CBABC-3B00-4A6F-885A-9B89B7877BEF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SITCASH_EXE_PS</RootNamespace>
+    <AssemblyName>SITCASH_EXE_PS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DFe.Classes, Version=0.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeus.Net.NFe.NFCe.1.0.1.485\lib\net40\DFe.Classes.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DFe.Utils, Version=0.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeus.Net.NFe.NFCe.1.0.1.485\lib\net40\DFe.Utils.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GPIntegrationAssembly">
+      <HintPath>..\..\..\..\..\Desktop\GPIntegrationAssembly.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamics.GP.eConnect">
+      <HintPath>..\..\..\..\..\Desktop\GPECONET\Microsoft.Dynamics.GP.eConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamics.GP.eConnect.Serialization">
+      <HintPath>..\..\..\..\..\Desktop\GPECONET\Microsoft.Dynamics.GP.eConnect.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NFe.Classes, Version=1.0.1.456, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeus.Net.NFe.NFCe.1.0.1.485\lib\net40\NFe.Classes.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NFe.Servicos, Version=1.0.1.456, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeus.Net.NFe.NFCe.1.0.1.485\lib\net40\NFe.Servicos.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NFe.Utils, Version=1.0.1.456, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeus.Net.NFe.NFCe.1.0.1.485\lib\net40\NFe.Utils.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NFe.Wsdl, Version=1.0.1.456, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeus.Net.NFe.NFCe.1.0.1.485\lib\net40\NFe.Wsdl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CONTROLLER\ControlerPalm.cs" />
+    <Compile Include="CONTROLLER\ControllerCuadredeCaja.cs" />
+    <Compile Include="CONTROLLER\ControllerDynamicsConfig.cs" />
+    <Compile Include="CONTROLLER\ControllerSitIntegration.cs" />
+    <Compile Include="INTREGATIONSCONTROLLERS\clsDataAcces.cs" />
+    <Compile Include="INTREGATIONSCONTROLLERS\clsLogic.cs" />
+    <Compile Include="INTREGATIONSCONTROLLERS\IntregrationGP.cs" />
+    <Compile Include="INTREGATIONSCONTROLLERS\WebServiceManager.cs" />
+    <Compile Include="MODEL\ViewModelItemInfo.cs" />
+    <Compile Include="MODEL\DYNAMICSCONFIG_DB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DYNAMICSCONFIG_DB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\GPDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GPDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\PALMDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PALMDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\SITINTEGRATIONDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SITINTEGRATIONDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\ViewModelCagraIntegracionNumbers.cs" />
+    <Compile Include="MODEL\ViewModelCagraIntegracionTransacionVenta.cs" />
+    <Compile Include="MODEL\ViewModelCargaIntegration.cs" />
+    <Compile Include="MODEL\ViewModelClientes.cs" />
+    <Compile Include="MODEL\ViewModelClientesCompletos.cs" />
+    <Compile Include="MODEL\ModelPalmVendors.cs" />
+    <Compile Include="MODEL\ViewModelDocumentList.cs" />
+    <Compile Include="MODEL\ViewModelDocumentsAmountsTotals.cs" />
+    <Compile Include="MODEL\ViewModelInvoiceDetail.cs" />
+    <Compile Include="MODEL\ViewModelMaxFecha.cs" />
+    <Compile Include="MODEL\ViewModelPalmID.cs" />
+    <Compile Include="MODEL\ViewModelUserInfo.cs" />
+    <Compile Include="VIEW\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\GPdataaccess.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VIEW\frmBuscarAyudante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\frmBuscarAyudante.Designer.cs">
+      <DependentUpon>frmBuscarAyudante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\frmbuscarcliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\frmbuscarcliente.Designer.cs">
+      <DependentUpon>frmbuscarcliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\ViewModelImportInfo.cs" />
+    <EmbeddedResource Include="VIEW\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VIEW\frmBuscarAyudante.resx">
+      <DependentUpon>frmBuscarAyudante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\frmbuscarcliente.resx">
+      <DependentUpon>frmbuscarcliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="MODEL\GPDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GPDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="MODEL\PALMDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PALMDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="MODEL\SITINTEGRATIONDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SITINTEGRATIONDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="MODEL\DYNAMICSCONFIG_DB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DYNAMICSCONFIG_DB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1483551469_checkin_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1483551674_Sales-by-Payment-Method-rep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1483551688_product-sales-report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1483551914_shop-23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1483551967_Button_Open-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1483552127_our_process_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUSCAR4.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JScript1.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

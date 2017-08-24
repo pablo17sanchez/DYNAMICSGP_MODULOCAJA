@@ -1,0 +1,17 @@
+C:\Users\pablo.sanchez\documents\visual studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\bin\Debug\SITCASH_EXE_PS.exe.config
+C:\Users\pablo.sanchez\documents\visual studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\bin\Debug\SITCASH_EXE_PS.exe
+C:\Users\pablo.sanchez\documents\visual studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\bin\Debug\SITCASH_EXE_PS.pdb
+C:\Users\pablo.sanchez\documents\visual studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\obj\x86\Debug\SITCASH_EXE_PS.Form1.resources
+C:\Users\pablo.sanchez\documents\visual studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\obj\x86\Debug\SITCASH_EXE_PS.Properties.Resources.resources
+C:\Users\pablo.sanchez\documents\visual studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\obj\x86\Debug\SITCASH_EXE_PS.VIEW.frmBuscarAyudante.resources
+C:\Users\pablo.sanchez\documents\visual studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\obj\x86\Debug\SITCASH_EXE_PS.VIEW.frmbuscarcliente.resources
+C:\Users\pablo.sanchez\documents\visual studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\obj\x86\Debug\SITCASH_EXE_PS.csproj.GenerateResource.Cache
+C:\Users\pablo.sanchez\documents\visual studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\obj\x86\Debug\SITCASH_EXE_PS.exe
+C:\Users\pablo.sanchez\documents\visual studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\obj\x86\Debug\SITCASH_EXE_PS.pdb
+C:\Users\pablo.sanchez\Documents\Visual Studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\obj\x86\Debug\SITCASH_EXE_PS.csprojResolveAssemblyReference.cache
+C:\Users\pablo.sanchez\Documents\Visual Studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\bin\Debug\DFe.Classes.dll
+C:\Users\pablo.sanchez\Documents\Visual Studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\bin\Debug\DFe.Utils.dll
+C:\Users\pablo.sanchez\Documents\Visual Studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\bin\Debug\NFe.Classes.dll
+C:\Users\pablo.sanchez\Documents\Visual Studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\bin\Debug\NFe.Servicos.dll
+C:\Users\pablo.sanchez\Documents\Visual Studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\bin\Debug\NFe.Utils.dll
+C:\Users\pablo.sanchez\Documents\Visual Studio 2010\Projects\SITCASH_EXE_PS\SITCASH_EXE_PS\bin\Debug\NFe.Wsdl.dll

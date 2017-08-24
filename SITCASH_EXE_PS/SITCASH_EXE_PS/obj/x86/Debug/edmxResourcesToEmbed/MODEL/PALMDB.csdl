@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PalmComSyncModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="PalmComSyncEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="in_conduce" EntityType="PalmComSyncModel.in_conduce" />
+    <EntitySet Name="IN_FACTURA" EntityType="PalmComSyncModel.IN_FACTURA" />
+    <EntitySet Name="IN_PEDIDOS" EntityType="PalmComSyncModel.IN_PEDIDOS" />
+    <EntitySet Name="OUT_CONFIG" EntityType="PalmComSyncModel.OUT_CONFIG" />
+    <EntitySet Name="in_detacond" EntityType="PalmComSyncModel.in_detacond" />
+    <EntitySet Name="IN_DETAFAC" EntityType="PalmComSyncModel.IN_DETAFAC" />
+    <EntitySet Name="IN_DETAPED" EntityType="PalmComSyncModel.IN_DETAPED" />
+  </EntityContainer>
+  <EntityType Name="in_conduce">
+    <Key>
+      <PropertyRef Name="CNDNUM" />
+    </Key>
+    <Property Name="PALMID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="CNDNUM" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHACOND" Type="DateTime" />
+    <Property Name="CODCLIE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="MONTOCND" Type="Decimal" Precision="15" Scale="2" />
+    <Property Name="MONPAGO" Type="Decimal" Precision="15" Scale="2" />
+    <Property Name="DESCUENTO" Type="Decimal" Precision="15" Scale="2" />
+    <Property Name="IMPUESTO" Type="Decimal" Precision="15" Scale="2" />
+    <Property Name="VALIDO" Type="Boolean" />
+    <Property Name="HORA" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="LATITUD" Type="Double" />
+    <Property Name="LONGITUD" Type="Double" />
+    <Property Name="RECIBIDOEN" Type="DateTime" />
+    <Property Name="IPADDRESS" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="PUID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ruta" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="idvendedor" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="idayudante" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="idayudante2" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="NoDocumento" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="TipoDocumento" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="IN_FACTURA">
+    <Key>
+      <PropertyRef Name="FACNUM" />
+      <PropertyRef Name="PALMID" />
+      <PropertyRef Name="NCF" />
+    </Key>
+    <Property Name="BALACT" Type="Decimal" Precision="22" Scale="2" />
+    <Property Name="BALANT" Type="Decimal" Precision="22" Scale="2" />
+    <Property Name="BANCOCC" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="BANCOCHK" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+    <Property Name="CODCLIE" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="DESCUENTO" Type="Decimal" Precision="22" Scale="2" />
+    <Property Name="FACNUM" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="FECHAEXP" Type="String" MaxLength="7" Unicode="false" FixedLength="true" />
+    <Property Name="FECHAFAC" Type="DateTime" />
+    <Property Name="IMPUESTO" Type="Decimal" Precision="22" Scale="2" />
+    <Property Name="MONCC" Type="Decimal" Precision="22" Scale="2" />
+    <Property Name="MONPAGEFEC" Type="Decimal" Precision="22" Scale="2" />
+    <Property Name="MONPAGO" Type="Decimal" Precision="22" Scale="2" />
+    <Property Name="MONTOCHK" Type="Decimal" Precision="22" Scale="2" />
+    <Property Name="MONTOFAC" Type="Decimal" Precision="22" Scale="2" />
+    <Property Name="NUMCC" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+    <Property Name="NUMCHK" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="OBSERVPAGO" Type="String" MaxLength="100" Unicode="false" FixedLength="true" />
+    <Property Name="PALMID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="TIPOCC" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="VALIDO" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="HORA" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="NCF" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+    <Property Name="FECHADEP" Type="DateTime" />
+    <Property Name="ipaddress" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="puid" Type="String" MaxLength="25" Unicode="false" FixedLength="true" />
+    <Property Name="recibidoen" Type="DateTime" />
+    <Property Name="latitud" Type="Single" />
+    <Property Name="longitud" Type="Single" />
+    <Property Name="ruta" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="idvendedor" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="idayudante" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="idayudante2" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="NoDocumento" Type="String" MaxLength="25" Unicode="false" FixedLength="true" />
+    <Property Name="TipoDocumento" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="IN_PEDIDOS">
+    <Key>
+      <PropertyRef Name="PEDNUM" />
+    </Key>
+    <Property Name="PALMID" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="PEDNUM" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHAPED" Type="DateTime" />
+    <Property Name="CODCLIE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="MONTOPED" Type="Decimal" Precision="15" Scale="2" />
+    <Property Name="MONPAGO" Type="Decimal" Precision="15" Scale="2" />
+    <Property Name="IMPUESTO" Type="Decimal" Precision="15" Scale="2" />
+    <Property Name="VALIDO" Type="Boolean" />
+    <Property Name="HORA" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="LATITUD" Type="Double" />
+    <Property Name="LONGITUD" Type="Double" />
+    <Property Name="RECIBIDOEN" Type="DateTime" />
+    <Property Name="IPADDRESS" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="PUID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="PROCESADO" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="ruta" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="idvendedor" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="idayudante" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="idayudante2" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="NoDocumento" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="TipoDocumento" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="OUT_CONFIG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="DIRECCION" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="EMPRESA" Type="String" MaxLength="40" Unicode="false" FixedLength="true" />
+    <Property Name="IDVENDEDOR" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="MENSAJE" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="MOTPASS" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="NOMBREVEND" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="ONDUTY" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="PALMID" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="PITBIS" Type="Int32" />
+    <Property Name="TELEFONO" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+    <Property Name="RNC" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="IMPINC" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="INIFAC" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <Property Name="RUTA" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idayudante2" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="nombreayudante2" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="HOST" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="idayudante" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+    <Property Name="nombreayudante" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="IDRUTA" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="in_detacond">
+    <Key>
+      <PropertyRef Name="orden" />
+    </Key>
+    <Property Type="String" Name="PALMID" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CNDNUM" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CODPROD" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="CANTIDAD" Precision="15" Scale="2" />
+    <Property Type="Decimal" Name="PRECIO" Precision="15" Scale="2" />
+    <Property Type="Decimal" Name="IMPUESTO" Precision="15" Scale="2" />
+    <Property Type="Decimal" Name="IMPORTE" Precision="15" Scale="2" />
+    <Property Type="Decimal" Name="DESCOFE" Precision="15" Scale="2" />
+    <Property Type="DateTime" Name="RECIBIDOEN" />
+    <Property Type="String" Name="IPADDRESS" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PUID" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="orden" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="fechacond" />
+  </EntityType>
+  <EntityType Name="IN_DETAFAC">
+    <Key>
+      <PropertyRef Name="CODPROD" />
+      <PropertyRef Name="FACNUM" />
+      <PropertyRef Name="PRECIO" />
+    </Key>
+    <Property Type="Decimal" Name="CANTIDAD" Precision="24" Scale="2" />
+    <Property Type="String" Name="CODPROD" Nullable="false" MaxLength="16" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="FACNUM" Nullable="false" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Type="Single" Name="IMPORTE" />
+    <Property Type="Single" Name="IMPUESTO" />
+    <Property Type="String" Name="PALMID" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="Decimal" Name="PRECIO" Nullable="false" Precision="22" Scale="2" />
+    <Property Type="Single" Name="descofe" />
+    <Property Type="String" Name="ipaddress" MaxLength="15" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="puid" MaxLength="25" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="IN_DETAPED">
+    <Key>
+      <PropertyRef Name="orden" />
+    </Key>
+    <Property Type="String" Name="PALMID" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PEDNUM" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CODPROD" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="CANTIDAD" Precision="15" Scale="2" />
+    <Property Type="Decimal" Name="PRECIO" Precision="15" Scale="2" />
+    <Property Type="Decimal" Name="IMPUESTO" Precision="15" Scale="2" />
+    <Property Type="Decimal" Name="IMPORTE" Precision="15" Scale="2" />
+    <Property Type="Int32" Name="ESCALA" />
+    <Property Type="DateTime" Name="RECIBIDOEN" />
+    <Property Type="String" Name="IPADDRESS" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PUID" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="orden" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>

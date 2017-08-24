@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SITGPIntegrationModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="SITGPIntegrationEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CargaGP" EntityType="SITGPIntegrationModel.CargaGP" />
+    <EntitySet Name="HCargaGP" EntityType="SITGPIntegrationModel.HCargaGP" />
+    <EntitySet Name="TransaccionVenta" EntityType="SITGPIntegrationModel.TransaccionVenta" />
+    <AssociationSet Name="FK_TransaccionVenta_CargaGP" Association="SITGPIntegrationModel.FK_TransaccionVenta_CargaGP">
+      <End Role="CargaGP" EntitySet="CargaGP" />
+      <End Role="TransaccionVenta" EntitySet="TransaccionVenta" />
+    </AssociationSet>
+    <EntitySet Name="TransaccionVentaItem" EntityType="SITGPIntegrationModel.TransaccionVentaItem" />
+  </EntityContainer>
+  <EntityType Name="CargaGP">
+    <Key>
+      <PropertyRef Name="IDCarga" />
+    </Key>
+    <Property Name="IDCarga" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="IDVendedor" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="IDAyudante" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="IDAyudante2" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="IDFactura" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Estatus" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="FechaCreacion" Type="DateTime" />
+    <NavigationProperty Name="TransaccionVenta" Relationship="SITGPIntegrationModel.FK_TransaccionVenta_CargaGP" FromRole="CargaGP" ToRole="TransaccionVenta" />
+  </EntityType>
+  <EntityType Name="HCargaGP">
+    <Key>
+      <PropertyRef Name="IDCarga" />
+    </Key>
+    <Property Type="Int32" Name="IDCarga" Nullable="false" />
+    <Property Type="String" Name="Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Estatus" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="FechaCreacion" />
+  </EntityType>
+  <EntityType Name="TransaccionVenta">
+    <Key>
+      <PropertyRef Name="IDVenta" />
+    </Key>
+    <Property Type="Int32" Name="IDCarga" Nullable="false" />
+    <Property Type="Int32" Name="IDVenta" Nullable="false" />
+    <Property Type="Int32" Name="Tipo" Nullable="false" />
+    <Property Type="String" Name="IDTipo" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NoDocumento" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Fecha" Nullable="false" />
+    <Property Type="String" Name="AlmacenDefault" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IDLote" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IDCliente" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NombreCliente" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NoOrden" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IDMoneda" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="DescuentoComercial" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Flete" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Miscelaneo" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MontoRecibido" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MontoEfectivo" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MontoCheque" Precision="19" Scale="4" />
+    <Property Type="String" Name="NumeroCheque" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Terminos" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="DescuentoRetornado" Precision="19" Scale="4" />
+    <Property Type="String" Name="IDComentario" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TextoComentario" MaxLength="700" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Notas" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ReferenciaCG" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Impuestos" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="CostoCobrar" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MontoXCobrar" Precision="19" Scale="4" />
+    <Property Type="String" Name="NCF" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IDVendedor" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IDAyudante" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IDAyudante2" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Status" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="ErrorDetail" MaxLength="800" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ruta" MaxLength="15" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="Conduce" MaxLength="25" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="CargaGP" Relationship="SITGPIntegrationModel.FK_TransaccionVenta_CargaGP" FromRole="TransaccionVenta" ToRole="CargaGP" />
+  </EntityType>
+  <Association Name="FK_TransaccionVenta_CargaGP">
+    <End Type="SITGPIntegrationModel.CargaGP" Role="CargaGP" Multiplicity="1" />
+    <End Type="SITGPIntegrationModel.TransaccionVenta" Role="TransaccionVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CargaGP">
+        <PropertyRef Name="IDCarga" />
+      </Principal>
+      <Dependent Role="TransaccionVenta">
+        <PropertyRef Name="IDCarga" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TransaccionVentaItem">
+    <Key>
+      <PropertyRef Name="IDVenta" />
+      <PropertyRef Name="NoProducto" />
+      <PropertyRef Name="UnidadMedida" />
+      <PropertyRef Name="Cantidad" />
+    </Key>
+    <Property Type="Int32" Name="IDVenta" Nullable="false" />
+    <Property Type="String" Name="NoProducto" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UnidadMedida" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="Cantidad" Nullable="false" />
+    <Property Type="Decimal" Name="PrecioUnitario" Precision="19" Scale="4" />
+    <Property Type="String" Name="DescripcionProducto" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="PrecioExtendido" Precision="19" Scale="4" />
+    <Property Type="Double" Name="CantidadFacturada" />
+    <Property Type="Double" Name="CantidadCompletada" />
+    <Property Type="Double" Name="CantidadCancelada" />
+    <Property Type="Double" Name="CantidadBO" />
+    <Property Type="Double" Name="CantidadOrdenada" />
+    <Property Type="Double" Name="CostoUnitario" />
+    <Property Type="Boolean" Name="EntregaDirecta" />
+    <Property Type="String" Name="ListaPrecio" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Almacen" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

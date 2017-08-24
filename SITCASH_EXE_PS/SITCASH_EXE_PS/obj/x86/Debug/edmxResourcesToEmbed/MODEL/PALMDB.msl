@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PalmComSyncModelStoreContainer" CdmEntityContainer="PalmComSyncEntities1">
+    <EntitySetMapping Name="in_conduce">
+      <EntityTypeMapping TypeName="PalmComSyncModel.in_conduce">
+        <MappingFragment StoreEntitySet="in_conduce">
+          <ScalarProperty Name="PALMID" ColumnName="PALMID" />
+          <ScalarProperty Name="CNDNUM" ColumnName="CNDNUM" />
+          <ScalarProperty Name="FECHACOND" ColumnName="FECHACOND" />
+          <ScalarProperty Name="CODCLIE" ColumnName="CODCLIE" />
+          <ScalarProperty Name="MONTOCND" ColumnName="MONTOCND" />
+          <ScalarProperty Name="MONPAGO" ColumnName="MONPAGO" />
+          <ScalarProperty Name="DESCUENTO" ColumnName="DESCUENTO" />
+          <ScalarProperty Name="IMPUESTO" ColumnName="IMPUESTO" />
+          <ScalarProperty Name="VALIDO" ColumnName="VALIDO" />
+          <ScalarProperty Name="HORA" ColumnName="HORA" />
+          <ScalarProperty Name="LATITUD" ColumnName="LATITUD" />
+          <ScalarProperty Name="LONGITUD" ColumnName="LONGITUD" />
+          <ScalarProperty Name="RECIBIDOEN" ColumnName="RECIBIDOEN" />
+          <ScalarProperty Name="IPADDRESS" ColumnName="IPADDRESS" />
+          <ScalarProperty Name="PUID" ColumnName="PUID" />
+          <ScalarProperty Name="ruta" ColumnName="ruta" />
+          <ScalarProperty Name="idvendedor" ColumnName="idvendedor" />
+          <ScalarProperty Name="idayudante" ColumnName="idayudante" />
+          <ScalarProperty Name="idayudante2" ColumnName="idayudante2" />
+          <ScalarProperty Name="NoDocumento" ColumnName="NoDocumento" />
+          <ScalarProperty Name="TipoDocumento" ColumnName="TipoDocumento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IN_FACTURA">
+      <EntityTypeMapping TypeName="PalmComSyncModel.IN_FACTURA">
+        <MappingFragment StoreEntitySet="IN_FACTURA">
+          <ScalarProperty Name="BALACT" ColumnName="BALACT" />
+          <ScalarProperty Name="BALANT" ColumnName="BALANT" />
+          <ScalarProperty Name="BANCOCC" ColumnName="BANCOCC" />
+          <ScalarProperty Name="BANCOCHK" ColumnName="BANCOCHK" />
+          <ScalarProperty Name="CODCLIE" ColumnName="CODCLIE" />
+          <ScalarProperty Name="DESCUENTO" ColumnName="DESCUENTO" />
+          <ScalarProperty Name="FACNUM" ColumnName="FACNUM" />
+          <ScalarProperty Name="FECHAEXP" ColumnName="FECHAEXP" />
+          <ScalarProperty Name="FECHAFAC" ColumnName="FECHAFAC" />
+          <ScalarProperty Name="IMPUESTO" ColumnName="IMPUESTO" />
+          <ScalarProperty Name="MONCC" ColumnName="MONCC" />
+          <ScalarProperty Name="MONPAGEFEC" ColumnName="MONPAGEFEC" />
+          <ScalarProperty Name="MONPAGO" ColumnName="MONPAGO" />
+          <ScalarProperty Name="MONTOCHK" ColumnName="MONTOCHK" />
+          <ScalarProperty Name="MONTOFAC" ColumnName="MONTOFAC" />
+          <ScalarProperty Name="NUMCC" ColumnName="NUMCC" />
+          <ScalarProperty Name="NUMCHK" ColumnName="NUMCHK" />
+          <ScalarProperty Name="OBSERVPAGO" ColumnName="OBSERVPAGO" />
+          <ScalarProperty Name="PALMID" ColumnName="PALMID" />
+          <ScalarProperty Name="TIPOCC" ColumnName="TIPOCC" />
+          <ScalarProperty Name="VALIDO" ColumnName="VALIDO" />
+          <ScalarProperty Name="HORA" ColumnName="HORA" />
+          <ScalarProperty Name="NCF" ColumnName="NCF" />
+          <ScalarProperty Name="FECHADEP" ColumnName="FECHADEP" />
+          <ScalarProperty Name="ipaddress" ColumnName="ipaddress" />
+          <ScalarProperty Name="puid" ColumnName="puid" />
+          <ScalarProperty Name="recibidoen" ColumnName="recibidoen" />
+          <ScalarProperty Name="latitud" ColumnName="latitud" />
+          <ScalarProperty Name="longitud" ColumnName="longitud" />
+          <ScalarProperty Name="ruta" ColumnName="ruta" />
+          <ScalarProperty Name="idvendedor" ColumnName="idvendedor" />
+          <ScalarProperty Name="idayudante" ColumnName="idayudante" />
+          <ScalarProperty Name="idayudante2" ColumnName="idayudante2" />
+          <ScalarProperty Name="NoDocumento" ColumnName="NoDocumento" />
+          <ScalarProperty Name="TipoDocumento" ColumnName="TipoDocumento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IN_PEDIDOS">
+      <EntityTypeMapping TypeName="PalmComSyncModel.IN_PEDIDOS">
+        <MappingFragment StoreEntitySet="IN_PEDIDOS">
+          <ScalarProperty Name="PALMID" ColumnName="PALMID" />
+          <ScalarProperty Name="PEDNUM" ColumnName="PEDNUM" />
+          <ScalarProperty Name="FECHAPED" ColumnName="FECHAPED" />
+          <ScalarProperty Name="CODCLIE" ColumnName="CODCLIE" />
+          <ScalarProperty Name="MONTOPED" ColumnName="MONTOPED" />
+          <ScalarProperty Name="MONPAGO" ColumnName="MONPAGO" />
+          <ScalarProperty Name="IMPUESTO" ColumnName="IMPUESTO" />
+          <ScalarProperty Name="VALIDO" ColumnName="VALIDO" />
+          <ScalarProperty Name="HORA" ColumnName="HORA" />
+          <ScalarProperty Name="LATITUD" ColumnName="LATITUD" />
+          <ScalarProperty Name="LONGITUD" ColumnName="LONGITUD" />
+          <ScalarProperty Name="RECIBIDOEN" ColumnName="RECIBIDOEN" />
+          <ScalarProperty Name="IPADDRESS" ColumnName="IPADDRESS" />
+          <ScalarProperty Name="PUID" ColumnName="PUID" />
+          <ScalarProperty Name="PROCESADO" ColumnName="PROCESADO" />
+          <ScalarProperty Name="ruta" ColumnName="ruta" />
+          <ScalarProperty Name="idvendedor" ColumnName="idvendedor" />
+          <ScalarProperty Name="idayudante" ColumnName="idayudante" />
+          <ScalarProperty Name="idayudante2" ColumnName="idayudante2" />
+          <ScalarProperty Name="NoDocumento" ColumnName="NoDocumento" />
+          <ScalarProperty Name="TipoDocumento" ColumnName="TipoDocumento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OUT_CONFIG">
+      <EntityTypeMapping TypeName="PalmComSyncModel.OUT_CONFIG">
+        <MappingFragment StoreEntitySet="OUT_CONFIG">
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="EMPRESA" ColumnName="EMPRESA" />
+          <ScalarProperty Name="IDVENDEDOR" ColumnName="IDVENDEDOR" />
+          <ScalarProperty Name="MENSAJE" ColumnName="MENSAJE" />
+          <ScalarProperty Name="MOTPASS" ColumnName="MOTPASS" />
+          <ScalarProperty Name="NOMBREVEND" ColumnName="NOMBREVEND" />
+          <ScalarProperty Name="ONDUTY" ColumnName="ONDUTY" />
+          <ScalarProperty Name="PALMID" ColumnName="PALMID" />
+          <ScalarProperty Name="PITBIS" ColumnName="PITBIS" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="RNC" ColumnName="RNC" />
+          <ScalarProperty Name="IMPINC" ColumnName="IMPINC" />
+          <ScalarProperty Name="INIFAC" ColumnName="INIFAC" />
+          <ScalarProperty Name="RUTA" ColumnName="RUTA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="idayudante2" ColumnName="idayudante2" />
+          <ScalarProperty Name="nombreayudante2" ColumnName="nombreayudante2" />
+          <ScalarProperty Name="HOST" ColumnName="HOST" />
+          <ScalarProperty Name="idayudante" ColumnName="idayudante" />
+          <ScalarProperty Name="nombreayudante" ColumnName="nombreayudante" />
+          <ScalarProperty Name="IDRUTA" ColumnName="IDRUTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="in_detacond">
+      <EntityTypeMapping TypeName="PalmComSyncModel.in_detacond">
+        <MappingFragment StoreEntitySet="in_detacond">
+          <ScalarProperty Name="fechacond" ColumnName="fechacond" />
+          <ScalarProperty Name="orden" ColumnName="orden" />
+          <ScalarProperty Name="PUID" ColumnName="PUID" />
+          <ScalarProperty Name="IPADDRESS" ColumnName="IPADDRESS" />
+          <ScalarProperty Name="RECIBIDOEN" ColumnName="RECIBIDOEN" />
+          <ScalarProperty Name="DESCOFE" ColumnName="DESCOFE" />
+          <ScalarProperty Name="IMPORTE" ColumnName="IMPORTE" />
+          <ScalarProperty Name="IMPUESTO" ColumnName="IMPUESTO" />
+          <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+          <ScalarProperty Name="CODPROD" ColumnName="CODPROD" />
+          <ScalarProperty Name="CNDNUM" ColumnName="CNDNUM" />
+          <ScalarProperty Name="PALMID" ColumnName="PALMID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IN_DETAFAC">
+      <EntityTypeMapping TypeName="PalmComSyncModel.IN_DETAFAC">
+        <MappingFragment StoreEntitySet="IN_DETAFAC">
+          <ScalarProperty Name="puid" ColumnName="puid" />
+          <ScalarProperty Name="ipaddress" ColumnName="ipaddress" />
+          <ScalarProperty Name="descofe" ColumnName="descofe" />
+          <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+          <ScalarProperty Name="PALMID" ColumnName="PALMID" />
+          <ScalarProperty Name="IMPUESTO" ColumnName="IMPUESTO" />
+          <ScalarProperty Name="IMPORTE" ColumnName="IMPORTE" />
+          <ScalarProperty Name="FACNUM" ColumnName="FACNUM" />
+          <ScalarProperty Name="CODPROD" ColumnName="CODPROD" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IN_DETAPED">
+      <EntityTypeMapping TypeName="PalmComSyncModel.IN_DETAPED">
+        <MappingFragment StoreEntitySet="IN_DETAPED">
+          <ScalarProperty Name="orden" ColumnName="orden" />
+          <ScalarProperty Name="PUID" ColumnName="PUID" />
+          <ScalarProperty Name="IPADDRESS" ColumnName="IPADDRESS" />
+          <ScalarProperty Name="RECIBIDOEN" ColumnName="RECIBIDOEN" />
+          <ScalarProperty Name="ESCALA" ColumnName="ESCALA" />
+          <ScalarProperty Name="IMPORTE" ColumnName="IMPORTE" />
+          <ScalarProperty Name="IMPUESTO" ColumnName="IMPUESTO" />
+          <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+          <ScalarProperty Name="CODPROD" ColumnName="CODPROD" />
+          <ScalarProperty Name="PEDNUM" ColumnName="PEDNUM" />
+          <ScalarProperty Name="PALMID" ColumnName="PALMID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

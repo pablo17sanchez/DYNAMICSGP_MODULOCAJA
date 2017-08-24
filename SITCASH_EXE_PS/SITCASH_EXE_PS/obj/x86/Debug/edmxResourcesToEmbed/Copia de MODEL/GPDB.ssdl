@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GPHNModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="GPHNModelStoreContainer">
+    <EntitySet Name="IV00101" EntityType="GPHNModel.Store.IV00101" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RM00301" EntityType="GPHNModel.Store.RM00301" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="IV00101">
+    <Key>
+      <PropertyRef Name="ITEMNMBR" />
+    </Key>
+    <Property Name="ITEMNMBR" Type="char" Nullable="false" MaxLength="31" />
+    <Property Name="ITEMDESC" Type="char" Nullable="false" MaxLength="101" />
+    <Property Name="NOTEINDX" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="ITMSHNAM" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="ITEMTYPE" Type="smallint" Nullable="false" />
+    <Property Name="ITMGEDSC" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="STNDCOST" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="CURRCOST" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="ITEMSHWT" Type="int" Nullable="false" />
+    <Property Name="DECPLQTY" Type="smallint" Nullable="false" />
+    <Property Name="DECPLCUR" Type="smallint" Nullable="false" />
+    <Property Name="ITMTSHID" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="TAXOPTNS" Type="smallint" Nullable="false" />
+    <Property Name="IVIVINDX" Type="int" Nullable="false" />
+    <Property Name="IVIVOFIX" Type="int" Nullable="false" />
+    <Property Name="IVCOGSIX" Type="int" Nullable="false" />
+    <Property Name="IVSLSIDX" Type="int" Nullable="false" />
+    <Property Name="IVSLDSIX" Type="int" Nullable="false" />
+    <Property Name="IVSLRNIX" Type="int" Nullable="false" />
+    <Property Name="IVINUSIX" Type="int" Nullable="false" />
+    <Property Name="IVINSVIX" Type="int" Nullable="false" />
+    <Property Name="IVDMGIDX" Type="int" Nullable="false" />
+    <Property Name="IVVARIDX" Type="int" Nullable="false" />
+    <Property Name="DPSHPIDX" Type="int" Nullable="false" />
+    <Property Name="PURPVIDX" Type="int" Nullable="false" />
+    <Property Name="UPPVIDX" Type="int" Nullable="false" />
+    <Property Name="IVRETIDX" Type="int" Nullable="false" />
+    <Property Name="ASMVRIDX" Type="int" Nullable="false" />
+    <Property Name="ITMCLSCD" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="ITMTRKOP" Type="smallint" Nullable="false" />
+    <Property Name="LOTTYPE" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="KPERHIST" Type="tinyint" Nullable="false" />
+    <Property Name="KPTRXHST" Type="tinyint" Nullable="false" />
+    <Property Name="KPCALHST" Type="tinyint" Nullable="false" />
+    <Property Name="KPDSTHST" Type="tinyint" Nullable="false" />
+    <Property Name="ALWBKORD" Type="tinyint" Nullable="false" />
+    <Property Name="VCTNMTHD" Type="smallint" Nullable="false" />
+    <Property Name="UOMSCHDL" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="ALTITEM1" Type="char" Nullable="false" MaxLength="31" />
+    <Property Name="ALTITEM2" Type="char" Nullable="false" MaxLength="31" />
+    <Property Name="USCATVLS_1" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="USCATVLS_2" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="USCATVLS_3" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="USCATVLS_4" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="USCATVLS_5" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="USCATVLS_6" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="MSTRCDTY" Type="smallint" Nullable="false" />
+    <Property Name="MODIFDT" Type="datetime" Nullable="false" />
+    <Property Name="CREATDDT" Type="datetime" Nullable="false" />
+    <Property Name="WRNTYDYS" Type="smallint" Nullable="false" />
+    <Property Name="PRCLEVEL" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="LOCNCODE" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="PINFLIDX" Type="int" Nullable="false" />
+    <Property Name="PURMCIDX" Type="int" Nullable="false" />
+    <Property Name="IVINFIDX" Type="int" Nullable="false" />
+    <Property Name="INVMCIDX" Type="int" Nullable="false" />
+    <Property Name="CGSINFLX" Type="int" Nullable="false" />
+    <Property Name="CGSMCIDX" Type="int" Nullable="false" />
+    <Property Name="ITEMCODE" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="TCC" Type="char" Nullable="false" MaxLength="31" />
+    <Property Name="PriceGroup" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="PRICMTHD" Type="smallint" Nullable="false" />
+    <Property Name="PRCHSUOM" Type="char" Nullable="false" MaxLength="9" />
+    <Property Name="SELNGUOM" Type="char" Nullable="false" MaxLength="9" />
+    <Property Name="KTACCTSR" Type="smallint" Nullable="false" />
+    <Property Name="LASTGENSN" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="ABCCODE" Type="smallint" Nullable="false" />
+    <Property Name="Revalue_Inventory" Type="tinyint" Nullable="false" />
+    <Property Name="Tolerance_Percentage" Type="int" Nullable="false" />
+    <Property Name="Purchase_Item_Tax_Schedu" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="Purchase_Tax_Options" Type="smallint" Nullable="false" />
+    <Property Name="ITMPLNNNGTYP" Type="smallint" Nullable="false" />
+    <Property Name="STTSTCLVLPRCNTG" Type="smallint" Nullable="false" />
+    <Property Name="CNTRYORGN" Type="char" Nullable="false" MaxLength="7" />
+    <Property Name="INACTIVE" Type="tinyint" Nullable="false" />
+    <Property Name="MINSHELF1" Type="smallint" Nullable="false" />
+    <Property Name="MINSHELF2" Type="smallint" Nullable="false" />
+    <Property Name="INCLUDEINDP" Type="tinyint" Nullable="false" />
+    <Property Name="LOTEXPWARN" Type="tinyint" Nullable="false" />
+    <Property Name="LOTEXPWARNDAYS" Type="smallint" Nullable="false" />
+    <Property Name="LASTGENLOT" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="Lot_Split_Quantity" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="DEX_ROW_TS" Type="datetime" Nullable="false" />
+    <Property Name="DEX_ROW_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="RM00301">
+    <Key>
+      <PropertyRef Name="SLPRSNID" />
+    </Key>
+    <Property Name="SLPRSNID" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="EMPLOYID" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="VENDORID" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="SLPRSNFN" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="SPRSNSMN" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="SPRSNSLN" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="ADDRESS1" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="ADDRESS2" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="ADDRESS3" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="CITY" Type="char" Nullable="false" MaxLength="35" />
+    <Property Name="STATE" Type="char" Nullable="false" MaxLength="29" />
+    <Property Name="ZIP" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="COUNTRY" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="PHONE1" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="PHONE2" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="PHONE3" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="FAX" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="INACTIVE" Type="tinyint" Nullable="false" />
+    <Property Name="SALSTERR" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="COMMCODE" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="COMPRCNT" Type="smallint" Nullable="false" />
+    <Property Name="STDCPRCT" Type="smallint" Nullable="false" />
+    <Property Name="COMAPPTO" Type="smallint" Nullable="false" />
+    <Property Name="COSTTODT" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="CSTLSTYR" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="TTLCOMTD" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="TTLCOMLY" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="COMSLTDT" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="COMSLLYR" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="NCOMSLTD" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="NCOMSLYR" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="KPCALHST" Type="tinyint" Nullable="false" />
+    <Property Name="KPERHIST" Type="tinyint" Nullable="false" />
+    <Property Name="NOTEINDX" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="MODIFDT" Type="datetime" Nullable="false" />
+    <Property Name="CREATDDT" Type="datetime" Nullable="false" />
+    <Property Name="COMMDEST" Type="smallint" Nullable="false" />
+    <Property Name="DEX_ROW_TS" Type="datetime" Nullable="false" />
+    <Property Name="DEX_ROW_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>

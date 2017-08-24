@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GPHNModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="GPHNModelStoreContainer">
+    <EntitySet Name="RM00301" EntityType="GPHNModel.Store.RM00301" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="RM00301">
+    <Key>
+      <PropertyRef Name="SLPRSNID" />
+    </Key>
+    <Property Name="SLPRSNID" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="EMPLOYID" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="VENDORID" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="SLPRSNFN" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="SPRSNSMN" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="SPRSNSLN" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="ADDRESS1" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="ADDRESS2" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="ADDRESS3" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="CITY" Type="char" Nullable="false" MaxLength="35" />
+    <Property Name="STATE" Type="char" Nullable="false" MaxLength="29" />
+    <Property Name="ZIP" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="COUNTRY" Type="char" Nullable="false" MaxLength="61" />
+    <Property Name="PHONE1" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="PHONE2" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="PHONE3" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="FAX" Type="char" Nullable="false" MaxLength="21" />
+    <Property Name="INACTIVE" Type="tinyint" Nullable="false" />
+    <Property Name="SALSTERR" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="COMMCODE" Type="char" Nullable="false" MaxLength="15" />
+    <Property Name="COMPRCNT" Type="smallint" Nullable="false" />
+    <Property Name="STDCPRCT" Type="smallint" Nullable="false" />
+    <Property Name="COMAPPTO" Type="smallint" Nullable="false" />
+    <Property Name="COSTTODT" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="CSTLSTYR" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="TTLCOMTD" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="TTLCOMLY" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="COMSLTDT" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="COMSLLYR" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="NCOMSLTD" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="NCOMSLYR" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="KPCALHST" Type="tinyint" Nullable="false" />
+    <Property Name="KPERHIST" Type="tinyint" Nullable="false" />
+    <Property Name="NOTEINDX" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+    <Property Name="MODIFDT" Type="datetime" Nullable="false" />
+    <Property Name="CREATDDT" Type="datetime" Nullable="false" />
+    <Property Name="COMMDEST" Type="smallint" Nullable="false" />
+    <Property Name="DEX_ROW_TS" Type="datetime" Nullable="false" />
+    <Property Name="DEX_ROW_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>

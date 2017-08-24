@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SITGPIntegrationModelStoreContainer" CdmEntityContainer="SITGPIntegrationEntities">
+    <EntitySetMapping Name="CargaGP">
+      <EntityTypeMapping TypeName="SITGPIntegrationModel.CargaGP">
+        <MappingFragment StoreEntitySet="CargaGP">
+          <ScalarProperty Name="IDCarga" ColumnName="IDCarga" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IDVendedor" ColumnName="IDVendedor" />
+          <ScalarProperty Name="IDAyudante" ColumnName="IDAyudante" />
+          <ScalarProperty Name="IDAyudante2" ColumnName="IDAyudante2" />
+          <ScalarProperty Name="IDFactura" ColumnName="IDFactura" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HCargaGP">
+      <EntityTypeMapping TypeName="SITGPIntegrationModel.HCargaGP">
+        <MappingFragment StoreEntitySet="HCargaGP">
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IDCarga" ColumnName="IDCarga" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransaccionVenta">
+      <EntityTypeMapping TypeName="SITGPIntegrationModel.TransaccionVenta">
+        <MappingFragment StoreEntitySet="TransaccionVenta">
+          <ScalarProperty Name="Conduce" ColumnName="Conduce" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="ErrorDetail" ColumnName="ErrorDetail" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IDAyudante2" ColumnName="IDAyudante2" />
+          <ScalarProperty Name="IDAyudante" ColumnName="IDAyudante" />
+          <ScalarProperty Name="IDVendedor" ColumnName="IDVendedor" />
+          <ScalarProperty Name="NCF" ColumnName="NCF" />
+          <ScalarProperty Name="MontoXCobrar" ColumnName="MontoXCobrar" />
+          <ScalarProperty Name="CostoCobrar" ColumnName="CostoCobrar" />
+          <ScalarProperty Name="Impuestos" ColumnName="Impuestos" />
+          <ScalarProperty Name="ReferenciaCG" ColumnName="ReferenciaCG" />
+          <ScalarProperty Name="Notas" ColumnName="Notas" />
+          <ScalarProperty Name="TextoComentario" ColumnName="TextoComentario" />
+          <ScalarProperty Name="IDComentario" ColumnName="IDComentario" />
+          <ScalarProperty Name="DescuentoRetornado" ColumnName="DescuentoRetornado" />
+          <ScalarProperty Name="Terminos" ColumnName="Terminos" />
+          <ScalarProperty Name="NumeroCheque" ColumnName="NumeroCheque" />
+          <ScalarProperty Name="MontoCheque" ColumnName="MontoCheque" />
+          <ScalarProperty Name="MontoEfectivo" ColumnName="MontoEfectivo" />
+          <ScalarProperty Name="MontoRecibido" ColumnName="MontoRecibido" />
+          <ScalarProperty Name="Miscelaneo" ColumnName="Miscelaneo" />
+          <ScalarProperty Name="Flete" ColumnName="Flete" />
+          <ScalarProperty Name="DescuentoComercial" ColumnName="DescuentoComercial" />
+          <ScalarProperty Name="IDMoneda" ColumnName="IDMoneda" />
+          <ScalarProperty Name="NoOrden" ColumnName="NoOrden" />
+          <ScalarProperty Name="NombreCliente" ColumnName="NombreCliente" />
+          <ScalarProperty Name="IDCliente" ColumnName="IDCliente" />
+          <ScalarProperty Name="IDLote" ColumnName="IDLote" />
+          <ScalarProperty Name="AlmacenDefault" ColumnName="AlmacenDefault" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="NoDocumento" ColumnName="NoDocumento" />
+          <ScalarProperty Name="IDTipo" ColumnName="IDTipo" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="IDVenta" ColumnName="IDVenta" />
+          <ScalarProperty Name="IDCarga" ColumnName="IDCarga" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransaccionVentaItem">
+      <EntityTypeMapping TypeName="SITGPIntegrationModel.TransaccionVentaItem">
+        <MappingFragment StoreEntitySet="TransaccionVentaItem">
+          <ScalarProperty Name="Almacen" ColumnName="Almacen" />
+          <ScalarProperty Name="ListaPrecio" ColumnName="ListaPrecio" />
+          <ScalarProperty Name="EntregaDirecta" ColumnName="EntregaDirecta" />
+          <ScalarProperty Name="CostoUnitario" ColumnName="CostoUnitario" />
+          <ScalarProperty Name="CantidadOrdenada" ColumnName="CantidadOrdenada" />
+          <ScalarProperty Name="CantidadBO" ColumnName="CantidadBO" />
+          <ScalarProperty Name="CantidadCancelada" ColumnName="CantidadCancelada" />
+          <ScalarProperty Name="CantidadCompletada" ColumnName="CantidadCompletada" />
+          <ScalarProperty Name="CantidadFacturada" ColumnName="CantidadFacturada" />
+          <ScalarProperty Name="PrecioExtendido" ColumnName="PrecioExtendido" />
+          <ScalarProperty Name="DescripcionProducto" ColumnName="DescripcionProducto" />
+          <ScalarProperty Name="PrecioUnitario" ColumnName="PrecioUnitario" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+          <ScalarProperty Name="NoProducto" ColumnName="NoProducto" />
+          <ScalarProperty Name="IDVenta" ColumnName="IDVenta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

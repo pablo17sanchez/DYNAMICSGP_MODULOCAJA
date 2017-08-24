@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DYNAMICSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="DYNAMICSModelStoreContainer">
+          <EntitySet Name="SY01400" EntityType="DYNAMICSModel.Store.SY01400" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SY01500" EntityType="DYNAMICSModel.Store.SY01500" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="SY01400">
+          <Key>
+            <PropertyRef Name="USERID" />
+          </Key>
+          <Property Name="USERID" Type="char" Nullable="false" MaxLength="15" />
+          <Property Name="USERNAME" Type="char" Nullable="false" MaxLength="31" />
+          <Property Name="Zoom_Fields_Font_Color" Type="smallint" Nullable="false" />
+          <Property Name="Zoom_Fields_Font_Style" Type="smallint" Nullable="false" />
+          <Property Name="Editable_Fields_Backgrou" Type="smallint" Nullable="false" />
+          <Property Name="Editable_Fields_Font_Col" Type="smallint" Nullable="false" />
+          <Property Name="Editable_Fields_Pattern" Type="smallint" Nullable="false" />
+          <Property Name="Editable_Fields_Pattern_" Type="smallint" Nullable="false" />
+          <Property Name="Scrolling_Fields_Backgro" Type="smallint" Nullable="false" />
+          <Property Name="Scrolling_Fields_Font_Co" Type="smallint" Nullable="false" />
+          <Property Name="Scrolling_Fields_Pattern" Type="smallint" Nullable="false" />
+          <Property Name="Scrolling_Fields_PatCor" Type="smallint" Nullable="false" />
+          <Property Name="Required_Fields_Font_Col" Type="smallint" Nullable="false" />
+          <Property Name="Required_Fields_Font_Sty" Type="smallint" Nullable="false" />
+          <Property Name="Internet_Browser" Type="char" Nullable="false" MaxLength="255" />
+          <Property Name="Internet_Address" Type="char" Nullable="false" MaxLength="255" />
+          <Property Name="Internet_Type" Type="smallint" Nullable="false" />
+          <Property Name="Internet_Address_Name" Type="char" Nullable="false" MaxLength="81" />
+          <Property Name="PASSWORD" Type="binary" Nullable="false" MaxLength="16" />
+          <Property Name="USRCLASS" Type="char" Nullable="false" MaxLength="15" />
+          <Property Name="MDFRDENT" Type="smallint" Nullable="false" />
+          <Property Name="MODIFDT" Type="datetime" Nullable="false" />
+          <Property Name="CREATDDT" Type="datetime" Nullable="false" />
+          <Property Name="LSTUSRED" Type="char" Nullable="false" MaxLength="15" />
+          <Property Name="PRTOSCRN" Type="tinyint" Nullable="false" />
+          <Property Name="PRTOPRTR" Type="tinyint" Nullable="false" />
+          <Property Name="SHRQFLDS" Type="tinyint" Nullable="false" />
+          <Property Name="DISTPROC" Type="smallint" Nullable="false" />
+          <Property Name="HSCRLARW" Type="tinyint" Nullable="false" />
+          <Property Name="SOPTYPE" Type="smallint" Nullable="false" />
+          <Property Name="RELID" Type="int" Nullable="false" />
+          <Property Name="SECACCS" Type="binary" Nullable="false" MaxLength="4" />
+          <Property Name="TODOOPEN" Type="tinyint" Nullable="false" />
+          <Property Name="TODOPERSOPEN" Type="tinyint" Nullable="false" />
+          <Property Name="TODOPERSROLL" Type="tinyint" Nullable="false" />
+          <Property Name="PALETTETYPE" Type="smallint" Nullable="false" />
+          <Property Name="ORGANIZATIONALVIEW" Type="smallint" Nullable="false" />
+          <Property Name="ACCOUNTINGVIEW" Type="tinyint" Nullable="false" />
+          <Property Name="USERLANG" Type="smallint" Nullable="false" />
+          <Property Name="UserRole" Type="smallint" Nullable="false" />
+          <Property Name="DEX_ROW_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="SY01500">
+          <Key>
+            <PropertyRef Name="CMPANYID" />
+          </Key>
+          <Property Name="LSTUSRED" Type="char" Nullable="false" MaxLength="15" />
+          <Property Name="CREATDDT" Type="datetime" Nullable="false" />
+          <Property Name="MODIFDT" Type="datetime" Nullable="false" />
+          <Property Name="CMPANYID" Type="smallint" Nullable="false" />
+          <Property Name="CMPNYNAM" Type="char" Nullable="false" MaxLength="65" />
+          <Property Name="TAXEXMT1" Type="char" Nullable="false" MaxLength="25" />
+          <Property Name="TAXEXMT2" Type="char" Nullable="false" MaxLength="25" />
+          <Property Name="TAXREGTN" Type="char" Nullable="false" MaxLength="25" />
+          <Property Name="COPTXSCH" Type="char" Nullable="false" MaxLength="15" />
+          <Property Name="COSTXSCH" Type="char" Nullable="false" MaxLength="15" />
+          <Property Name="LOCATNNM" Type="char" Nullable="false" MaxLength="31" />
+          <Property Name="ADRCNTCT" Type="char" Nullable="false" MaxLength="61" />
+          <Property Name="ADDRESS1" Type="char" Nullable="false" MaxLength="61" />
+          <Property Name="ADDRESS2" Type="char" Nullable="false" MaxLength="61" />
+          <Property Name="ADDRESS3" Type="char" Nullable="false" MaxLength="61" />
+          <Property Name="CITY" Type="char" Nullable="false" MaxLength="35" />
+          <Property Name="COUNTY" Type="char" Nullable="false" MaxLength="61" />
+          <Property Name="STATE" Type="char" Nullable="false" MaxLength="29" />
+          <Property Name="ZIPCODE" Type="char" Nullable="false" MaxLength="11" />
+          <Property Name="PHONE1" Type="char" Nullable="false" MaxLength="21" />
+          <Property Name="PHONE2" Type="char" Nullable="false" MaxLength="21" />
+          <Property Name="PHONE3" Type="char" Nullable="false" MaxLength="21" />
+          <Property Name="FAXNUMBR" Type="char" Nullable="false" MaxLength="21" />
+          <Property Name="USESCRTY" Type="tinyint" Nullable="false" />
+          <Property Name="UDCOSTR1" Type="char" Nullable="false" MaxLength="31" />
+          <Property Name="UDCOSTR2" Type="char" Nullable="false" MaxLength="31" />
+          <Property Name="CMPCNTRY" Type="char" Nullable="false" MaxLength="61" />
+          <Property Name="NOTEINDX" Type="numeric" Nullable="false" Precision="19" Scale="5" />
+          <Property Name="PPSFRNUM" Type="char" Nullable="false" MaxLength="25" />
+          <Property Name="PPSTAXRT" Type="smallint" Nullable="false" />
+          <Property Name="PPSVNDID" Type="char" Nullable="false" MaxLength="15" />
+          <Property Name="VATMODE" Type="tinyint" Nullable="false" />
+          <Property Name="LOCATNID" Type="char" Nullable="false" MaxLength="15" />
+          <Property Name="INTERID" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="ACSEGSEP" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="SECOPTS" Type="binary" Nullable="false" MaxLength="4" />
+          <Property Name="DisplayRegisteredPalette" Type="tinyint" Nullable="false" />
+          <Property Name="Company_Options" Type="binary" Nullable="false" MaxLength="4" />
+          <Property Name="Vets100CompanyNumber" Type="char" Nullable="false" MaxLength="21" />
+          <Property Name="TYPEOFBUSINESS" Type="char" Nullable="false" MaxLength="31" />
+          <Property Name="DUNS_Number" Type="char" Nullable="false" MaxLength="21" />
+          <Property Name="SICNUMBER" Type="char" Nullable="false" MaxLength="15" />
+          <Property Name="GOVCRPID" Type="char" Nullable="false" MaxLength="31" />
+          <Property Name="BRNCHNMBR" Type="char" Nullable="false" MaxLength="21" />
+          <Property Name="DFLTTXDTLID" Type="char" Nullable="false" MaxLength="15" />
+          <Property Name="PurchasesTaxDetailID" Type="char" Nullable="false" MaxLength="15" />
+          <Property Name="CCode" Type="char" Nullable="false" MaxLength="7" />
+          <Property Name="IVTRFDOCFMT" Type="smallint" Nullable="false" />
+          <Property Name="WORKFLOWENABLED" Type="tinyint" Nullable="false" />
+          <Property Name="CrmCredentialsMethod" Type="smallint" Nullable="false" />
+          <Property Name="CrmOrganizationName" Type="char" Nullable="false" MaxLength="255" />
+          <Property Name="CrmServiceUrl" Type="char" Nullable="false" MaxLength="255" />
+          <Property Name="DEX_ROW_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DYNAMICSModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DYNAMICSEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SY01400" EntityType="DYNAMICSModel.SY01400" />
+          <EntitySet Name="SY01500" EntityType="DYNAMICSModel.SY01500" />
+        </EntityContainer>
+        <EntityType Name="SY01400">
+          <Key>
+            <PropertyRef Name="USERID" />
+          </Key>
+          <Property Name="USERID" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="true" />
+          <Property Name="USERNAME" Type="String" Nullable="false" MaxLength="31" Unicode="false" FixedLength="true" />
+          <Property Name="Zoom_Fields_Font_Color" Type="Int16" Nullable="false" />
+          <Property Name="Zoom_Fields_Font_Style" Type="Int16" Nullable="false" />
+          <Property Name="Editable_Fields_Backgrou" Type="Int16" Nullable="false" />
+          <Property Name="Editable_Fields_Font_Col" Type="Int16" Nullable="false" />
+          <Property Name="Editable_Fields_Pattern" Type="Int16" Nullable="false" />
+          <Property Name="Editable_Fields_Pattern_" Type="Int16" Nullable="false" />
+          <Property Name="Scrolling_Fields_Backgro" Type="Int16" Nullable="false" />
+          <Property Name="Scrolling_Fields_Font_Co" Type="Int16" Nullable="false" />
+          <Property Name="Scrolling_Fields_Pattern" Type="Int16" Nullable="false" />
+          <Property Name="Scrolling_Fields_PatCor" Type="Int16" Nullable="false" />
+          <Property Name="Required_Fields_Font_Col" Type="Int16" Nullable="false" />
+          <Property Name="Required_Fields_Font_Sty" Type="Int16" Nullable="false" />
+          <Property Name="Internet_Browser" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="true" />
+          <Property Name="Internet_Address" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="true" />
+          <Property Name="Internet_Type" Type="Int16" Nullable="false" />
+          <Property Name="Internet_Address_Name" Type="String" Nullable="false" MaxLength="81" Unicode="false" FixedLength="true" />
+          <Property Name="PASSWORD" Type="Binary" Nullable="false" MaxLength="16" FixedLength="true" />
+          <Property Name="USRCLASS" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="true" />
+          <Property Name="MDFRDENT" Type="Int16" Nullable="false" />
+          <Property Name="MODIFDT" Type="DateTime" Nullable="false" />
+          <Property Name="CREATDDT" Type="DateTime" Nullable="false" />
+          <Property Name="LSTUSRED" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="true" />
+          <Property Name="PRTOSCRN" Type="Byte" Nullable="false" />
+          <Property Name="PRTOPRTR" Type="Byte" Nullable="false" />
+          <Property Name="SHRQFLDS" Type="Byte" Nullable="false" />
+          <Property Name="DISTPROC" Type="Int16" Nullable="false" />
+          <Property Name="HSCRLARW" Type="Byte" Nullable="false" />
+          <Property Name="SOPTYPE" Type="Int16" Nullable="false" />
+          <Property Name="RELID" Type="Int32" Nullable="false" />
+          <Property Name="SECACCS" Type="Binary" Nullable="false" MaxLength="4" FixedLength="true" />
+          <Property Name="TODOOPEN" Type="Byte" Nullable="false" />
+          <Property Name="TODOPERSOPEN" Type="Byte" Nullable="false" />
+          <Property Name="TODOPERSROLL" Type="Byte" Nullable="false" />
+          <Property Name="PALETTETYPE" Type="Int16" Nullable="false" />
+          <Property Name="ORGANIZATIONALVIEW" Type="Int16" Nullable="false" />
+          <Property Name="ACCOUNTINGVIEW" Type="Byte" Nullable="false" />
+          <Property Name="USERLANG" Type="Int16" Nullable="false" />
+          <Property Name="UserRole" Type="Int16" Nullable="false" />
+          <Property Name="DEX_ROW_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="SY01500">
+          <Key>
+            <PropertyRef Name="CMPANYID" />
+          </Key>
+          <Property Type="String" Name="LSTUSRED" Nullable="false" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Type="DateTime" Name="CREATDDT" Nullable="false" />
+          <Property Type="DateTime" Name="MODIFDT" Nullable="false" />
+          <Property Type="Int16" Name="CMPANYID" Nullable="false" />
+          <Property Type="String" Name="CMPNYNAM" Nullable="false" MaxLength="65" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="TAXEXMT1" Nullable="false" MaxLength="25" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="TAXEXMT2" Nullable="false" MaxLength="25" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="TAXREGTN" Nullable="false" MaxLength="25" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="COPTXSCH" Nullable="false" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="COSTXSCH" Nullable="false" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="LOCATNNM" Nullable="false" MaxLength="31" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="ADRCNTCT" Nullable="false" MaxLength="61" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="ADDRESS1" Nullable="false" MaxLength="61" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="ADDRESS2" Nullable="false" MaxLength="61" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="ADDRESS3" Nullable="false" MaxLength="61" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="CITY" Nullable="false" MaxLength="35" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="COUNTY" Nullable="false" MaxLength="61" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="STATE" Nullable="false" MaxLength="29" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="ZIPCODE" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="PHONE1" Nullable="false" MaxLength="21" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="PHONE2" Nullable="false" MaxLength="21" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="PHONE3" Nullable="false" MaxLength="21" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="FAXNUMBR" Nullable="false" MaxLength="21" FixedLength="true" Unicode="false" />
+          <Property Type="Byte" Name="USESCRTY" Nullable="false" />
+          <Property Type="String" Name="UDCOSTR1" Nullable="false" MaxLength="31" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="UDCOSTR2" Nullable="false" MaxLength="31" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="CMPCNTRY" Nullable="false" MaxLength="61" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="NOTEINDX" Nullable="false" Precision="19" Scale="5" />
+          <Property Type="String" Name="PPSFRNUM" Nullable="false" MaxLength="25" FixedLength="true" Unicode="false" />
+          <Property Type="Int16" Name="PPSTAXRT" Nullable="false" />
+          <Property Type="String" Name="PPSVNDID" Nullable="false" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Type="Byte" Name="VATMODE" Nullable="false" />
+          <Property Type="String" Name="LOCATNID" Nullable="false" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="INTERID" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="ACSEGSEP" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Binary" Name="SECOPTS" Nullable="false" MaxLength="4" FixedLength="true" />
+          <Property Type="Byte" Name="DisplayRegisteredPalette" Nullable="false" />
+          <Property Type="Binary" Name="Company_Options" Nullable="false" MaxLength="4" FixedLength="true" />
+          <Property Type="String" Name="Vets100CompanyNumber" Nullable="false" MaxLength="21" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="TYPEOFBUSINESS" Nullable="false" MaxLength="31" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="DUNS_Number" Nullable="false" MaxLength="21" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="SICNUMBER" Nullable="false" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="GOVCRPID" Nullable="false" MaxLength="31" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="BRNCHNMBR" Nullable="false" MaxLength="21" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="DFLTTXDTLID" Nullable="false" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="PurchasesTaxDetailID" Nullable="false" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="CCode" Nullable="false" MaxLength="7" FixedLength="true" Unicode="false" />
+          <Property Type="Int16" Name="IVTRFDOCFMT" Nullable="false" />
+          <Property Type="Byte" Name="WORKFLOWENABLED" Nullable="false" />
+          <Property Type="Int16" Name="CrmCredentialsMethod" Nullable="false" />
+          <Property Type="String" Name="CrmOrganizationName" Nullable="false" MaxLength="255" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="CrmServiceUrl" Nullable="false" MaxLength="255" FixedLength="true" Unicode="false" />
+          <Property Type="Int32" Name="DEX_ROW_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DYNAMICSModelStoreContainer" CdmEntityContainer="DYNAMICSEntities">
+          <EntitySetMapping Name="SY01400">
+            <EntityTypeMapping TypeName="DYNAMICSModel.SY01400">
+              <MappingFragment StoreEntitySet="SY01400">
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="Zoom_Fields_Font_Color" ColumnName="Zoom_Fields_Font_Color" />
+                <ScalarProperty Name="Zoom_Fields_Font_Style" ColumnName="Zoom_Fields_Font_Style" />
+                <ScalarProperty Name="Editable_Fields_Backgrou" ColumnName="Editable_Fields_Backgrou" />
+                <ScalarProperty Name="Editable_Fields_Font_Col" ColumnName="Editable_Fields_Font_Col" />
+                <ScalarProperty Name="Editable_Fields_Pattern" ColumnName="Editable_Fields_Pattern" />
+                <ScalarProperty Name="Editable_Fields_Pattern_" ColumnName="Editable_Fields_Pattern_" />
+                <ScalarProperty Name="Scrolling_Fields_Backgro" ColumnName="Scrolling_Fields_Backgro" />
+                <ScalarProperty Name="Scrolling_Fields_Font_Co" ColumnName="Scrolling_Fields_Font_Co" />
+                <ScalarProperty Name="Scrolling_Fields_Pattern" ColumnName="Scrolling_Fields_Pattern" />
+                <ScalarProperty Name="Scrolling_Fields_PatCor" ColumnName="Scrolling_Fields_PatCor" />
+                <ScalarProperty Name="Required_Fields_Font_Col" ColumnName="Required_Fields_Font_Col" />
+                <ScalarProperty Name="Required_Fields_Font_Sty" ColumnName="Required_Fields_Font_Sty" />
+                <ScalarProperty Name="Internet_Browser" ColumnName="Internet_Browser" />
+                <ScalarProperty Name="Internet_Address" ColumnName="Internet_Address" />
+                <ScalarProperty Name="Internet_Type" ColumnName="Internet_Type" />
+                <ScalarProperty Name="Internet_Address_Name" ColumnName="Internet_Address_Name" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="USRCLASS" ColumnName="USRCLASS" />
+                <ScalarProperty Name="MDFRDENT" ColumnName="MDFRDENT" />
+                <ScalarProperty Name="MODIFDT" ColumnName="MODIFDT" />
+                <ScalarProperty Name="CREATDDT" ColumnName="CREATDDT" />
+                <ScalarProperty Name="LSTUSRED" ColumnName="LSTUSRED" />
+                <ScalarProperty Name="PRTOSCRN" ColumnName="PRTOSCRN" />
+                <ScalarProperty Name="PRTOPRTR" ColumnName="PRTOPRTR" />
+                <ScalarProperty Name="SHRQFLDS" ColumnName="SHRQFLDS" />
+                <ScalarProperty Name="DISTPROC" ColumnName="DISTPROC" />
+                <ScalarProperty Name="HSCRLARW" ColumnName="HSCRLARW" />
+                <ScalarProperty Name="SOPTYPE" ColumnName="SOPTYPE" />
+                <ScalarProperty Name="RELID" ColumnName="RELID" />
+                <ScalarProperty Name="SECACCS" ColumnName="SECACCS" />
+                <ScalarProperty Name="TODOOPEN" ColumnName="TODOOPEN" />
+                <ScalarProperty Name="TODOPERSOPEN" ColumnName="TODOPERSOPEN" />
+                <ScalarProperty Name="TODOPERSROLL" ColumnName="TODOPERSROLL" />
+                <ScalarProperty Name="PALETTETYPE" ColumnName="PALETTETYPE" />
+                <ScalarProperty Name="ORGANIZATIONALVIEW" ColumnName="ORGANIZATIONALVIEW" />
+                <ScalarProperty Name="ACCOUNTINGVIEW" ColumnName="ACCOUNTINGVIEW" />
+                <ScalarProperty Name="USERLANG" ColumnName="USERLANG" />
+                <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+                <ScalarProperty Name="DEX_ROW_ID" ColumnName="DEX_ROW_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SY01500">
+            <EntityTypeMapping TypeName="DYNAMICSModel.SY01500">
+              <MappingFragment StoreEntitySet="SY01500">
+                <ScalarProperty Name="DEX_ROW_ID" ColumnName="DEX_ROW_ID" />
+                <ScalarProperty Name="CrmServiceUrl" ColumnName="CrmServiceUrl" />
+                <ScalarProperty Name="CrmOrganizationName" ColumnName="CrmOrganizationName" />
+                <ScalarProperty Name="CrmCredentialsMethod" ColumnName="CrmCredentialsMethod" />
+                <ScalarProperty Name="WORKFLOWENABLED" ColumnName="WORKFLOWENABLED" />
+                <ScalarProperty Name="IVTRFDOCFMT" ColumnName="IVTRFDOCFMT" />
+                <ScalarProperty Name="CCode" ColumnName="CCode" />
+                <ScalarProperty Name="PurchasesTaxDetailID" ColumnName="PurchasesTaxDetailID" />
+                <ScalarProperty Name="DFLTTXDTLID" ColumnName="DFLTTXDTLID" />
+                <ScalarProperty Name="BRNCHNMBR" ColumnName="BRNCHNMBR" />
+                <ScalarProperty Name="GOVCRPID" ColumnName="GOVCRPID" />
+                <ScalarProperty Name="SICNUMBER" ColumnName="SICNUMBER" />
+                <ScalarProperty Name="DUNS_Number" ColumnName="DUNS_Number" />
+                <ScalarProperty Name="TYPEOFBUSINESS" ColumnName="TYPEOFBUSINESS" />
+                <ScalarProperty Name="Vets100CompanyNumber" ColumnName="Vets100CompanyNumber" />
+                <ScalarProperty Name="Company_Options" ColumnName="Company_Options" />
+                <ScalarProperty Name="DisplayRegisteredPalette" ColumnName="DisplayRegisteredPalette" />
+                <ScalarProperty Name="SECOPTS" ColumnName="SECOPTS" />
+                <ScalarProperty Name="ACSEGSEP" ColumnName="ACSEGSEP" />
+                <ScalarProperty Name="INTERID" ColumnName="INTERID" />
+                <ScalarProperty Name="LOCATNID" ColumnName="LOCATNID" />
+                <ScalarProperty Name="VATMODE" ColumnName="VATMODE" />
+                <ScalarProperty Name="PPSVNDID" ColumnName="PPSVNDID" />
+                <ScalarProperty Name="PPSTAXRT" ColumnName="PPSTAXRT" />
+                <ScalarProperty Name="PPSFRNUM" ColumnName="PPSFRNUM" />
+                <ScalarProperty Name="NOTEINDX" ColumnName="NOTEINDX" />
+                <ScalarProperty Name="CMPCNTRY" ColumnName="CMPCNTRY" />
+                <ScalarProperty Name="UDCOSTR2" ColumnName="UDCOSTR2" />
+                <ScalarProperty Name="UDCOSTR1" ColumnName="UDCOSTR1" />
+                <ScalarProperty Name="USESCRTY" ColumnName="USESCRTY" />
+                <ScalarProperty Name="FAXNUMBR" ColumnName="FAXNUMBR" />
+                <ScalarProperty Name="PHONE3" ColumnName="PHONE3" />
+                <ScalarProperty Name="PHONE2" ColumnName="PHONE2" />
+                <ScalarProperty Name="PHONE1" ColumnName="PHONE1" />
+                <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+                <ScalarProperty Name="STATE" ColumnName="STATE" />
+                <ScalarProperty Name="COUNTY" ColumnName="COUNTY" />
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+                <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+                <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+                <ScalarProperty Name="ADRCNTCT" ColumnName="ADRCNTCT" />
+                <ScalarProperty Name="LOCATNNM" ColumnName="LOCATNNM" />
+                <ScalarProperty Name="COSTXSCH" ColumnName="COSTXSCH" />
+                <ScalarProperty Name="COPTXSCH" ColumnName="COPTXSCH" />
+                <ScalarProperty Name="TAXREGTN" ColumnName="TAXREGTN" />
+                <ScalarProperty Name="TAXEXMT2" ColumnName="TAXEXMT2" />
+                <ScalarProperty Name="TAXEXMT1" ColumnName="TAXEXMT1" />
+                <ScalarProperty Name="CMPNYNAM" ColumnName="CMPNYNAM" />
+                <ScalarProperty Name="CMPANYID" ColumnName="CMPANYID" />
+                <ScalarProperty Name="MODIFDT" ColumnName="MODIFDT" />
+                <ScalarProperty Name="CREATDDT" ColumnName="CREATDDT" />
+                <ScalarProperty Name="LSTUSRED" ColumnName="LSTUSRED" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="DYNAMICSCONFIG_DB" ZoomLevel="41">
+        <EntityTypeShape EntityType="DYNAMICSModel.SY01400" Width="1.5" PointX="0.75" PointY="0.75" Height="8.9031380208333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="DYNAMICSModel.SY01500" Width="1.5" PointX="3.375" PointY="0.75" Height="11.210755208333332" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
